@@ -34,45 +34,63 @@ export default function Academics() {
       </section>
 
       {/* Programs Grid */}
-      <section className="py-16 px-6 bg-white flex flesx-col items-center justify-center">
-        <div className="max-w-6xl mx-auto space-y-14">
+      <section className="py-16 px-6 bg-white flex flex-col items-center justify-center">
+        <div className="max-w-6xl w-full space-y-16">
           {programs.map((program, idx) => (
             <div
               key={program.title}
-              className={`grid grid-cols-1 lg:grid-cols-2 gap-10 items-center ${
-                idx % 2 ? 'lg:[&>div:first-child]:order-2' : ''
+              className={`rounded-none w-full py-10 px-4 sm:px-8 ${
+                idx % 2 ? 'bg-[#b3532e]/90 text-white' : 'bg-white'
               }`}
             >
-              {/* Image */}
-              <div className="w-full">
-                <div className="relative w-full overflow-hidden rounded-lg shadow-lg bg-gray-200" style={{ maxHeight: '380px' }}>
-                  <img
-                    src={program.image}
-                    alt={program.title}
-                    className="w-full h-full object-cover"
-                  />
+              <div
+                className={`grid grid-cols-1 lg:grid-cols-2 gap-10 items-center ${
+                  idx % 2 ? 'lg:[&>div:first-child]:order-2' : ''
+                }`}
+              >
+                {/* Image */}
+                <div className="w-full flex justify-center">
+                  <div className="relative w-full overflow-hidden rounded-lg shadow-lg bg-gray-200" style={{ maxHeight: '380px' }}>
+                    <img
+                      src={program.image}
+                      alt={program.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
-              </div>
 
-              {/* Content */}
-              <div className="w-full space-y-4">
-                <h3 className="text-3xl font-bold text-red-600">{program.title}</h3>
-                <p className="text-gray-700 leading-relaxed text-lg">
-                  {program.description}
-                </p>
-                <a
-                  href="#"
-                  className="inline-flex items-center gap-2 text-red-600 font-semibold hover:text-red-700 transition-colors"
-                >
-                  Click here to learn more →
-                </a>
+                {/* Content */}
+                <div className="w-full space-y-4">
+                  <h3
+                    className={`text-3xl font-bold ${
+                      idx % 2 ? 'text-white' : 'text-red-600'
+                    }`}
+                  >
+                    {program.title}
+                  </h3>
+                  <p
+                    className={`leading-relaxed text-lg ${
+                      idx % 2 ? 'text-white/90' : 'text-gray-700'
+                    }`}
+                  >
+                    {program.description}
+                  </p>
+                  <a
+                    href="#"
+                    className={`inline-flex items-center gap-2 font-semibold transition-colors ${
+                      idx % 2
+                        ? 'text-white hover:text-amber-200'
+                        : 'text-red-600 hover:text-red-700'
+                    }`}
+                  >
+                    Click here to learn more →
+                  </a>
+                </div>
               </div>
             </div>
           ))}
         </div>
       </section>
-
-      {/* Specializations */}
     </div>
   );
 }
