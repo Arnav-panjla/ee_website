@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "IIT Delhi - Electrical Engineering",
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body className="antialiased bg-white dark:bg-black">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

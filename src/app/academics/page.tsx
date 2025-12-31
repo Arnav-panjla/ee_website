@@ -35,7 +35,7 @@ export default function Academics() {
 
       {/* Programs Grid */}
       <section className="py-16 px-6 bg-white flex flex-col items-center justify-center">
-        <div className="max-w-6xl w-full space-y-16">
+        <div className="max-w-6xl w-full space-y-16">``
           {programs.map((program, idx) => (
             <div
               key={program.title}
