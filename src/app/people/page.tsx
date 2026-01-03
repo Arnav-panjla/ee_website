@@ -1,101 +1,161 @@
 export default function People() {
-  const faculty = [
-    { id: 1, name: "Prof. A. K. Sinha", designation: "Head of Department", area: "Power Systems" },
-    { id: 2, name: "Prof. B. N. Singh", designation: "Professor", area: "Power Electronics" },
-    { id: 3, name: "Prof. C. D. Gupta", designation: "Associate Professor", area: "Control Systems" },
-    { id: 4, name: "Prof. E. F. Kumar", designation: "Assistant Professor", area: "Computer Technology" },
-    { id: 5, name: "Prof. G. H. Patel", designation: "Professor", area: "Digital Signal Processing" },
-    { id: 6, name: "Prof. I. J. Sharma", designation: "Associate Professor", area: "Renewable Energy" },
-    { id: 7, name: "Prof. K. L. Verma", designation: "Assistant Professor", area: "Microelectronics" },
-    { id: 8, name: "Prof. M. N. Desai", designation: "Professor", area: "High Voltage Engineering" },
-  ];
+
+
+  const FacultyCard = ({ img, name, role }) => (
+      <div className="bg-gray-100 p-6 max-w-xs text-center shadow-sm hover:shadow-md transition">
+        <div className="w-full aspect-[8/9] overflow-hidden mb-4">
+          <img
+            src="/face.png"
+            alt="Faculty-1"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <h3 className="text-red-600 font-semibold">{name}</h3>
+        <p className="text-xs text-gray-600 mt-1">{role}</p>
+      </div>
+    );
+
 
   return (
     <div className="w-full pt-20">
       {/* Hero Banner */}
-      <section className="hero-section" style={{
-        backgroundColor: '#1a1a1a',
-        minHeight: '60vh',
-      }}>
-        <div className="hero-overlay"></div>
-        <div className="hero-content">
-          <h1 className="section-title">OUR PEOPLE</h1>
+      <section
+        className="relative w-full h-[45vh] flex items-center justify-center text-center text-white"
+        style={{
+          backgroundImage: 'url("/image_iitd.png")',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 w-[80vw] bg-black/50" />
+
+        <div className="relative z-10 max-w-4xl px-6">
+          <h1 className="text-4xl md:text-5xl font-extrabold tracking-wide">
+            ALL FACULTIES
+          </h1>
+          <p className="mt-4 text-sm md:text-base text-gray-200">
+            The IIT Delhi Electrical Engineering faculty includes renowned professors,
+            associate professors, and assistant professors specialising in areas like
+            power systems, control, signal processing, communications, microelectronics,
+            and AI applications.
+          </p>
         </div>
       </section>
+
 
       {/* Faculty Section */}
-      <section className="py-20 px-6 bg-white dark:bg-gray-900">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-12">
-            Faculty Members
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {faculty.map((member) => (
-              <div key={member.id} className="bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                <div className="aspect-square bg-gradient-to-br from-gray-300 to-gray-400 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center">
-                  <div className="text-6xl">👨‍🏫</div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                    {member.name}
-                  </h3>
-                  <p className="text-red-600 font-semibold mb-2">
-                    {member.designation}
-                  </p>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">
-                    {member.area}
-                  </p>
-                </div>
-              </div>
-            ))}
+
+      <section className="w-full bg-white py-16 px-6">
+        <div className="w-auto h-4"></div>
+
+        <div className="w-full flex justify-center mx-auto gap-16">
+
+          {/* Filter Options */}
+          <div className=" bg-red-700 shadow-lg border-6 border-red-700 flex flex-col">
+            {/* Research Category */}
+            <div className="bg-red-700 text-white text-3xl font-bold text-center py-4">
+              <div className="w-auto h-4"></div>
+              Research Category
+              <div className="w-auto h-2"></div>
+            </div>
+
+            <ul>
+              {[
+                "Communications",
+                "Control and Automation",
+                "Power Engineering",
+                "Computer Technology",
+                "Integrated Electronics and Circuits",
+              ].map((item, idx) => (
+                <li
+                  key={item}
+                  className={`px-4  py-3 text-center text-2xl font-medium cursor-pointer border-2 border-red-700
+                    ${idx % 2 === 0 ? "bg-red-100 text-red-700" : "bg-red-200 text-red-800"}
+                    hover:bg-red-300`}
+                >
+                  <div className="w-auto h-2"></div>
+                  {item}
+                  <div className="w-auto h-2"></div>
+                </li>
+                
+              ))}
+            </ul>
+
+            {/* Professor */}
+            <div className="w-auto h-18"></div>
+            <div className="bg-red-700 text-white text-3xl font-bold text-center py-4 mt-4">
+              <div className="w-auto h-2"></div>
+              Professor
+              <div className="w-auto h-2"></div>
+            </div>
+
+            <ul>
+              {[
+                "Professor",
+                "Associate Professor",
+                "Assistant Professor",
+                "Emeritus Professor",
+                "Visiting Professor",
+              ].map((item, idx) => (
+                <li
+                  key={item}
+                  className={`px-4 py-3 text-center text-2xl font-medium cursor-pointer border-6 border-red-700
+                    ${idx % 2 === 0 ? "bg-red-100 text-red-700" : "bg-red-200 text-red-800"}
+                    hover:bg-red-300`}
+                >
+                  <div className="w-auto h-2"></div>
+                  {item}
+                  <div className="w-auto h-2"></div>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+
+          <div className="flex-1 max-w-4xl">
+            <div className="w-auto h-16"></div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 max-w-4xl mx-auto">
+              <FacultyCard
+                img="/faculty1.jpg"
+                name="Tess Brown"
+                role="Office Manager"
+              />
+
+              <FacultyCard
+                img="/faculty2.jpg"
+                name="Krishan Kant"
+                role="Assistant Professor"
+              />
+
+              <FacultyCard
+                img="/faculty3.jpg"
+                name="Don Francis"
+                role="Founder & CEO"
+              />
+              <FacultyCard
+                img="/faculty1.jpg"
+                name="Tess Brown"
+                role="Office Manager"
+              />
+
+              <FacultyCard
+                img="/faculty2.jpg"
+                name="Krishan Kant"
+                role="Assistant Professor"
+              />
+
+              <FacultyCard
+                img="/faculty3.jpg"
+                name="Don Francis"
+                role="Founder & CEO"
+              />
+            </div>
           </div>
         </div>
+        <div className="w-auto h-20"></div>
+
       </section>
 
-      {/* Students Section */}
-      <section className="py-20 px-6 bg-gray-100 dark:bg-gray-800">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-12">
-            Students
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {[
-              {
-                level: "B.Tech",
-                count: "120",
-                desc: "Undergraduate students pursuing their Bachelor's degree in Electrical Engineering",
-              },
-              {
-                level: "M.Tech",
-                count: "180",
-                desc: "Postgraduate students enrolled in various specialization programs",
-              },
-              {
-                level: "PhD",
-                count: "80",
-                desc: "Doctoral researchers working on cutting-edge projects",
-              },
-              {
-                level: "Total",
-                count: "380",
-                desc: "Combined student strength across all programs",
-              },
-            ].map((student, idx) => (
-              <div key={idx} className="bg-white dark:bg-gray-700 p-8 rounded-lg">
-                <h3 className="text-2xl font-bold text-red-600 mb-2">
-                  {student.count}
-                </h3>
-                <p className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                  {student.level} Students
-                </p>
-                <p className="text-gray-600 dark:text-gray-300">
-                  {student.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
