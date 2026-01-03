@@ -5,29 +5,13 @@ import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white">
-      {/* Scroll to Top Button */}
-      <div className="flex justify-center -mt-5">
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="bg-gray-600 hover:bg-gray-500 text-white p-2 rounded transition-colors"
-          aria-label="Scroll to top"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
-          </svg>
-        </button>
-      </div>
+    <footer className="bg-black text-white w-full py-12">
 
-      {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 border-b border-dashed border-gray-600 pb-12">
+    <div className='w-full py-12 '>
+
+      <div className="w-full flex flex-col flex-wrap align-items mx-auto px-6 sm:px-8 md:px-12 lg:px-16">
+        <div className=' w-full h-6'></div>
+        <div className="w-full mx-auto px-6 sm:px-8 md:px-12 lg:px-16 flex flex-wrap justify-evenly gap-x-8  gap-y-10 border-b border-dashed border-gray-600 pb-12">
           {/* About Us Column */}
           <div className="text-center md:text-left">
             <h3 className="text-red-500 font-bold text-lg mb-6 tracking-wider">ABOUT US</h3>
@@ -85,10 +69,12 @@ export default function Footer() {
           </div>
 
           {/* Addresses Column */}
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-left max-w-xs md:max-w-xm">
             <h3 className="text-red-500 font-bold text-lg mb-6 tracking-wider">ADDRESSES</h3>
             <p className="text-gray-300 leading-relaxed">
-              Block II, IIT Delhi Main Rd, IIT Campus, Hauz Khas, New Delhi, Delhi 110016
+              Block II, IIT Delhi Main Rd, <br/>
+              IIT Campus, Hauz Khas, <br/>
+              New Delhi, Delhi 110016
             </p>
             <div className="mt-6 opacity-30">
               <Image
@@ -100,28 +86,33 @@ export default function Footer() {
               />
             </div>
           </div>
+          <div className=' w-full h-1'></div>
         </div>
 
-        {/* Bottom Footer */}
-        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-gray-400 text-sm">The Department of Electrical Engineering</p>
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full overflow-hidden">
-              <Image
-                src="/image.png"
-                alt="IIT Delhi Logo"
-                width={40}
-                height={40}
-                className="w-full h-full object-cover"
-              />
+            {/* Bottom Footer */}
+            <div className=' w-full h-2'></div>
+
+            <div className="pt-8 flex flex-col md:flex-row items-center justify-evenly gap-4">
+            <p className="text-gray-400 text-sm">The Department of Electrical Engineering</p>
+            <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full overflow-hidden">
+                <Image
+                    src="/image.png"
+                    alt="IIT Delhi Logo"
+                    width={40}
+                    height={40}
+                    className="w-full h-full object-cover"
+                />
+                </div>
+                <div>
+                <p className="text-red-500 font-semibold text-sm">Department of Electrical Engineering</p>
+                <p className="text-gray-300 text-sm">Indian Institute of Technology Delhi</p>
+                </div>
             </div>
-            <div>
-              <p className="text-red-500 font-semibold text-sm">Department of Electrical Engineering</p>
-              <p className="text-gray-300 text-sm">Indian Institute of Technology Delhi</p>
+            <p className="text-gray-400 text-sm">Copyright © 2025 All rights reserved</p>
             </div>
-          </div>
-          <p className="text-gray-400 text-sm">Copyright © 2025 All rights reserved</p>
         </div>
+        <div className=' w-full h-6'></div>
       </div>
     </footer>
   );
