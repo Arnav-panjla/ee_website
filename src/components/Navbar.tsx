@@ -19,11 +19,13 @@ export default function Navbar() {
 
   const navItems = [
     { label: 'HOME', href: '/' },
-    { label: 'ACADEMICS', href: '/academics' },
     { label: 'GALLERY', href: '/gallery' },
     { label: 'PEOPLE', href: '/people' },
     { label: 'ENGAGE', href: '/engage' },
     { label: 'CONTACT', href: '/contact' },
+    { label: 'ADMISSION', href: '/admission' },
+    { label: 'RESEARCH', href: '/research' },
+    { label: 'ACADEMICS', href: '/academics' },
   ];
 
   const isActive = (href: string) => {
@@ -39,10 +41,10 @@ export default function Navbar() {
           : 'bg-[#1f1f1f]/75 backdrop-blur-sm border-b border-white/10'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 md:py-5">
-        <div className="flex items-center justify-between gap-8">
+      <div className="w-full flex justify-center mx-auto px-6 py-4 md:py-5">
+        <div className="flex items-center justify-between gap-4">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-4">
             <div className="w-16 h-16 rounded-full overflow-hidden flex items-center justify-center">
               <img src="/image.png" alt="IIT Logo" className="w-full h-full object-cover" />
             </div>
