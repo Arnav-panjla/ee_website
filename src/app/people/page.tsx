@@ -1,7 +1,12 @@
+
 export default function People() {
 
+  type FacultyCardProps = {
+    name: string;
+    role: string;
+  };
 
-  const FacultyCard = ({ img, name, role }) => (
+  const FacultyCard = ({name, role }: FacultyCardProps) => (
       <div className="bg-gray-100 p-6 max-w-xs text-center shadow-sm hover:shadow-md transition">
         <div className="w-full aspect-[8/9] overflow-hidden mb-4">
           <img
@@ -116,36 +121,30 @@ export default function People() {
             <div className="w-auto h-16"></div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 max-w-4xl mx-auto">
               <FacultyCard
-                img="/faculty1.jpg"
                 name="Tess Brown"
                 role="Office Manager"
               />
 
               <FacultyCard
-                img="/faculty2.jpg"
                 name="Krishan Kant"
                 role="Assistant Professor"
               />
 
               <FacultyCard
-                img="/faculty3.jpg"
                 name="Don Francis"
                 role="Founder & CEO"
               />
               <FacultyCard
-                img="/faculty1.jpg"
                 name="Tess Brown"
                 role="Office Manager"
               />
 
               <FacultyCard
-                img="/faculty2.jpg"
                 name="Krishan Kant"
                 role="Assistant Professor"
               />
 
               <FacultyCard
-                img="/faculty3.jpg"
                 name="Don Francis"
                 role="Founder & CEO"
               />
