@@ -150,7 +150,7 @@ export default function Home() {
 
             {/* LEFT: large image */}
             <div className="lg:flex-[2] w-full">
-              <div className="relative w-full aspect-[16/9] overflow-hidden rounded shadow-lg">
+              <div className="relative w-full aspect-[4/3] overflow-hidden rounded shadow-lg">
                 <img
                   src="/robot_1.png"
                   alt="Intelligent Systems and Robotics"
@@ -161,7 +161,7 @@ export default function Home() {
 
             {/* RIGHT: stacked images */}
             <div className="lg:flex-[1] w-full flex flex-col gap-6">
-              <div className="relative w-full aspect-[16/9] overflow-hidden rounded shadow">
+              <div className="relative w-full aspect-[16/8] overflow-hidden rounded shadow">
                 <img
                   src="/robot.png"
                   alt="Research Image 1"
@@ -169,7 +169,7 @@ export default function Home() {
                 />
               </div>
 
-              <div className="relative w-full aspect-[16/9] overflow-hidden rounded shadow">
+              <div className="relative w-full aspect-[16/8] overflow-hidden rounded shadow">
                 <img
                   src="/robot.png"
                   alt="Research Image 2"
@@ -181,11 +181,13 @@ export default function Home() {
           </div>
 
           {/* Caption */}
-          <p className="text-xl font-semibold text-red-700">
+          <p className="text-2xl font-semibold text-red-700">
             Intelligent Systems and Robotics
           </p>
 
+          <div className="w-full h-1"></div>
         </div>
+
       </section>
 
 
@@ -201,57 +203,115 @@ export default function Home() {
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-red-700/90 to-red-700/40 z-0"></div>
+        <div className="w-full mx-auto flex flex-col justify-evenly items-center relative z-10 max-w-7xl">
+          <div className="relative z-10 w-full flex flex-col items-center">
+            <div className="flex flex-col items-center mb-8 sm:mb-12">
+              <div className="w-16 h-1 bg-white mb-4"></div>
 
-        <div className="relative z-10 w-full max-w-6xl flex flex-col items-center">
-          <div className="flex flex-col items-center mb-8 sm:mb-12">
-            <div className="w-16 h-1 bg-white mb-4"></div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white text-center">
-              FUN FACTS
-            </h2>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white text-center">
+                FUN FACTS
+              </h2>
+            </div>
+
+            {/* Stats flex container */}
+            <div className="w-full flex flex-wrap justify-center gap-8 sm:gap-12 md:gap-16">
+              {/* Stat 1 */}
+              <div className="flex flex-col items-center text-center min-w-[120px]">
+                <div className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-2">
+                  106
+                </div>
+                <p className="text-gray-100 text-xs sm:text-sm font-semibold whitespace-pre-line">
+                  HAPPY{'\n'}CLIENTS
+                </p>
+              </div>
+
+              {/* Stat 2 */}
+              <div className="flex flex-col items-center text-center min-w-[120px]">
+                <div className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-2">
+                  198
+                </div>
+                <p className="text-gray-100 text-xs sm:text-sm font-semibold whitespace-pre-line">
+                  WEBSITES{'\n'}LAUNCHED
+                </p>
+              </div>
+
+              {/* Stat 3 */}
+              <div className="flex flex-col items-center text-center min-w-[120px]">
+                <div className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-2">
+                  506
+                </div>
+                <p className="text-gray-100 text-xs sm:text-sm font-semibold whitespace-pre-line">
+                  SOCIAL{'\n'}CAMPAIGNS
+                </p>
+              </div>
+
+              {/* Stat 4 */}
+              <div className="flex flex-col items-center text-center min-w-[120px]">
+                <div className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-2">
+                  1603
+                </div>
+                <p className="text-gray-100 text-xs sm:text-sm font-semibold whitespace-pre-line">
+                  CUPS OF{'\n'}COFFEE
+                </p>
+              </div>
+            </div>
           </div>
 
-          {/* Stats flex container */}
-          <div className="w-full flex flex-wrap justify-center gap-8 sm:gap-12 md:gap-16">
-            {/* Stat 1 */}
-            <div className="flex flex-col items-center text-center min-w-[120px]">
-              <div className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-2">
-                106
+          <div className="w-full h-2"></div>
+
+            {/* image */}
+          <div className="flex gap-4 w-full w-full mx-auto px-6">
+            {/* Left */}
+            <div className="flex flex-col gap-4 w-1/4">
+              <div className="relative w-full aspect-[16/9] overflow-hidden rounded shadow">
+                <img
+                  src="/shoes.png"
+                  alt="Shoes"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
               </div>
-              <p className="text-gray-100 text-xs sm:text-sm font-semibold whitespace-pre-line">
-                HAPPY{'\n'}CLIENTS
-              </p>
+
+              <div className="relative w-full aspect-[16/9] overflow-hidden rounded shadow">
+                <img
+                  src="/car.png"
+                  alt="Car"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              </div>
             </div>
 
-            {/* Stat 2 */}
-            <div className="flex flex-col items-center text-center min-w-[120px]">
-              <div className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-2">
-                198
+            {/* Center */}
+            <div className="w-2/4">
+              <div className="relative w-full aspect-[16/9] overflow-hidden rounded shadow">
+                <img
+                  src="/main_grp.png"
+                  alt="Main Group"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
               </div>
-              <p className="text-gray-100 text-xs sm:text-sm font-semibold whitespace-pre-line">
-                WEBSITES{'\n'}LAUNCHED
-              </p>
             </div>
 
-            {/* Stat 3 */}
-            <div className="flex flex-col items-center text-center min-w-[120px]">
-              <div className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-2">
-                506
+            {/* Right */}
+            <div className="flex flex-col gap-4 w-1/4">
+              <div className="relative w-full aspect-[16/9] overflow-hidden rounded shadow">
+                <img
+                  src="/stairs.png"
+                  alt="Stairs"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
               </div>
-              <p className="text-gray-100 text-xs sm:text-sm font-semibold whitespace-pre-line">
-                SOCIAL{'\n'}CAMPAIGNS
-              </p>
-            </div>
 
-            {/* Stat 4 */}
-            <div className="flex flex-col items-center text-center min-w-[120px]">
-              <div className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-2">
-                1603
+              <div className="relative w-full aspect-[16/9] overflow-hidden rounded shadow">
+                <img
+                  src="/pcb.png"
+                  alt="PCB"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
               </div>
-              <p className="text-gray-100 text-xs sm:text-sm font-semibold whitespace-pre-line">
-                CUPS OF{'\n'}COFFEE
-              </p>
+
             </div>
           </div>
+
         </div>
       </section>
     </div>
