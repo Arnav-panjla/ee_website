@@ -36,16 +36,21 @@ export default function Contact() {
   return (
     <div className="w-full pt-20">
       {/* Hero Banner */}
-      <section className="hero-section" style={{
-        backgroundColor: '#1a1a1a',
-        minHeight: '60vh',
-      }}>
-        <div className="hero-overlay"></div>
-        <div className="hero-content">
-          <h1 className="section-title">CONTACT US</h1>
-          <p className="text-xl text-gray-200">
-            Get in touch with the Department of Electrical Engineering
-          </p>
+      <section
+        className="relative w-full min-h-[50vh] flex items-center justify-center text-center"
+        style={{
+          backgroundImage: 'url("/image_iitd.png")',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundColor: '#111',
+        }}
+      >
+        <div className="absolute inset-0 bg-black/45" />
+        <div className="relative z-10 space-y-3 px-4 max-w-3xl">
+          {/* <p className="text-sm font-semibold text-white tracking-[0.28em]">ACADEMICS</p> */}
+          <h1 className="text-7xl font-extrabold text-white">Contact us</h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dolore fugit sit odit voluptate modi dignissimos nemo saepe laboriosam explicabo ducimus ad, illo earum ipsum, veniam asperiores laborum officia minus.
         </div>
       </section>
 
