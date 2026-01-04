@@ -53,153 +53,90 @@ export default function Contact() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dolore fugit sit odit voluptate modi dignissimos nemo saepe laboriosam explicabo ducimus ad, illo earum ipsum, veniam asperiores laborum officia minus.
         </div>
       </section>
+{/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
+      <div className=" w-auto h-6 bg-white"></div>
+{/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
+      <section className="bg-white flex justify-evenly py-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          
+          {/* Header */}
+          <h1 className="text-5xl font-bold text-orange-700 mb-4">
+            Contact Us
+          </h1>
+          <p className="text-lg text-orange-600 mb-12">
+            Make a contribution and help us improve.
+          </p>
+          <div className='w-auto h-10'></div>
 
-      {/* Contact Content */}
-      <section className="py-20 px-6 bg-white dark:bg-gray-900">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            {/* Contact Info */}
-            <div>
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
-                Get In Touch
-              </h2>
-              <div className="space-y-8">
-                <div>
-                  <h3 className="font-semibold text-red-600 mb-2">Email</h3>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    dept.ee@iitdelhi.ac.in
-                  </p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-red-600 mb-2">Phone</h3>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    +91-11-2659 1042
-                  </p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-red-600 mb-2">Address</h3>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    Department of Electrical Engineering<br />
-                    Indian Institute of Technology Delhi<br />
-                    New Delhi 110016, India
-                  </p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-red-600 mb-4">Office Hours</h3>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    Monday - Friday: 10:00 AM - 5:00 PM<br />
-                    Saturday & Sunday: Closed
-                  </p>
-                </div>
+          {/* Form Grid */}
+          <form className="grid grid-cols-1 md:grid-cols-2 gap-24">
+            
+            {/* Left Column */}
+            <div className="space-y-6 grid gap-4">
+              <div>
+                <label className="block text-sm font-medium text-orange-700 mb-2">
+                  First Name
+                </label>
+                <input
+                  type="text"
+                  className="w-full border text-2xl border-orange-600 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-orange-700 mb-2">
+                  Last Name
+                </label>
+                <input
+                  type="text"
+                  className="w-full border text-2xl border-orange-600 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-orange-700 mb-2">
+                  Email <span className="text-red-600">*</span>
+                </label>
+                <input
+                  type="email"
+                  required
+                  className="w-full border text-2xl border-orange-600 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                />
               </div>
             </div>
 
-            {/* Contact Form */}
-            <div className="lg:col-span-2">
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
-                Send us a Message
-              </h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-semibold text-gray-900 dark:text-white mb-2">
-                      Name
-                    </label>
-                    <input
-                      type="text"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-red-600"
-                      placeholder="Your Name"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-semibold text-gray-900 dark:text-white mb-2">
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-red-600"
-                      placeholder="Your Email"
-                    />
-                  </div>
-                </div>
+            {/* Right Column */}
+            <div className="flex flex-col w-full justify-center h-full">
+              <label className="block text-sm font-medium text-orange-700 mb-2">
+                Message
+              </label>
+              <textarea
+                rows={10}
+                className="w-full flex-[5] border text-md border-orange-600 px-4 py-3 resize-none focus:outline-none focus:ring-2 focus:ring-orange-500 flex-1"
+              ></textarea>
+              
+              <div className="w-auto h-1 bg-transparent"></div>
 
-                <div>
-                  <label className="block text-sm font-semibold text-gray-900 dark:text-white mb-2">
-                    Phone
-                  </label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-red-600"
-                    placeholder="Your Phone Number"
-                  />
-                </div>
+              <button
+                type="submit"
+                className="mt-6 w-auto flex-[1] bg-orange-700 text-white text-sm border-lg border-orange-700 px-10 py-3 font-semibold hover:bg-orange-800 transition"
+              >
+                
+                Send
+              </button>
 
-                <div>
-                  <label className="block text-sm font-semibold text-gray-900 dark:text-white mb-2">
-                    Subject
-                  </label>
-                  <input
-                    type="text"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-red-600"
-                    placeholder="Subject"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-gray-900 dark:text-white mb-2">
-                    Message
-                  </label>
-                  <textarea
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    rows={5}
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-red-600"
-                    placeholder="Your Message"
-                  ></textarea>
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full btn-primary bg-red-600 hover:bg-red-700"
-                >
-                  Send Message
-                </button>
-              </form>
+              {/* Success Message */}
+              <p className="mt-4 flex-[1] text-orange-700 text-center font-medium">
+                Thanks for submitting!
+              </p>
             </div>
-          </div>
+          
+          </form>
         </div>
       </section>
-
-      {/* Map Section */}
-      <section className="py-20 px-6 bg-gray-100 dark:bg-gray-800">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
-            Find Us
-          </h2>
-          <div className="bg-gray-300 dark:bg-gray-700 rounded-lg h-96 flex items-center justify-center">
-            <p className="text-gray-600 dark:text-gray-400">
-              📍 Map will be embedded here
-            </p>
-          </div>
-        </div>
-      </section>
+{/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
+      <div className=" w-auto h-6 bg-white"></div>
+{/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
     </div>
   );
 }
