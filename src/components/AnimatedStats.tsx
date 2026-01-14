@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 type Stat = {
   value: number;
@@ -38,12 +38,38 @@ export default function AnimatedStats({
   stats: Stat[];
   duration?: number;
 }) {
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const [hasStarted, setHasStarted] = useState(false);
+
+  useEffect(() => {
+    const node = containerRef.current;
+    if (!node) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setHasStarted(true);
+            observer.disconnect();
+          }
+        });
+      },
+      { threshold: 0.25 }
+    );
+
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div className="w-full flex flex-wrap justify-center gap-8 sm:gap-12 md:gap-16">
+    <div
+      ref={containerRef}
+      className="w-full flex flex-wrap justify-center gap-8 sm:gap-12 md:gap-16"
+    >
       {stats.map((s, idx) => (
         <StatItem
           key={idx}
-          value={s.value}
+          value={hasStarted ? s.value : 0}
           label={s.label}
           minWidth={s.minWidth ?? "min-w-[120px]"}
           duration={duration}
