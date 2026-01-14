@@ -5,19 +5,22 @@ export default function Home() {
     <div className="w-full flex flex-col">
       {/* Hero Section with Background Image */}
       <section
-        className="relative w-full min-h-screen flex items-center justify-center px-4 sm:px-8 md:px-12 lg:px-16 py-12 sm:py-16 md:py-20"
+        className="relative w-full min-h-[130vh] flex items-center justify-center px-4 sm:px-8 md:px-12 lg:px-16 py-12 sm:py-16 md:py-20"
         style={{
           backgroundImage: 'url("/image_iitd.png")',
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
-          backgroundSize: "cover",
+          backgroundSize: "contain",
           backgroundColor: "#ffffff",
         }}
       >
         {/* Hero Content */}
-        <div className="flex items-center justify-center w-full max-w-7xl">
+        <div className="flex items-center justify-center w-full max-w-9xl">
           <div className="flex flex-col items-start justify-center z-20 px-4 sm:px-8 md:px-12">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-tight mb-8 animate-slide-up">
+            <h1
+              className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-black leading-tight mb-8 animate-slide-up"
+              style={{ animationDuration: "2s", animationTimingFunction: "ease", animationFillMode: "both" }}
+            >
               <span className="block text-yellow-100">MAKING</span>
               <span className="block text-yellow-100">CONNECTIONS</span>
               <span className="block text-white">DELIVERING</span>
@@ -44,7 +47,7 @@ export default function Home() {
       >
         <div className="absolute inset-0 bg-gradient-to-r from-red-700/90 to-red-700/40 z-0"></div>
 
-        <div className="relative z-10 w-full max-w-7xl flex  gap-8 flex-col items-center">
+        <div className="relative z-10 w-full max-w-9xl flex gap-8 flex-col items-center">
           <div className="mt-10 sm:mt-12 md:mt-16 w-full h-10"></div>
 
           <div className="flex justify-center mb-8 sm:mb-12">
@@ -60,7 +63,7 @@ export default function Home() {
 
           {/* <div className="mt-10 sm:mt-12 md:mt-16 w-full h-10"></div> */}
 
-          <div className="grid w-full gap-8 px-4 mt-32 sm:px-6 justify-center grid-cols-[repeat(auto-fit,minmax(220px,270px))]">
+          <div className="grid w-full gap-4 px-4 mt-32 sm:px-6 justify-center grid-cols-[repeat(auto-fit,minmax(220px,270px))]">
             {[
               // {
               //   title: "Video Title",
@@ -88,6 +91,13 @@ export default function Home() {
                 duration: "03:27",
                 thumb:
                   "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80",
+              },
+              {
+                title: "Video Title",
+                desc: "This is a great space to update your audience with a description of your video. Include information like…",
+                duration: "02:05",
+                thumb:
+                  "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80",
               },
               {
                 title: "Video Title",

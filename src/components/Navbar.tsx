@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 type NavItem = {
   label: string;
@@ -19,38 +19,38 @@ export default function Navbar() {
       setIsScrolled(window.scrollY > 10);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navItems: NavItem[] = [
-    { label: 'HOME', href: '/' },
-    { label: 'GALLERY', href: '/gallery' },
-    { label: 'PEOPLE', href: '/people' },
-    { label: 'ENGAGE', href: '/engage' },
-    { label: 'CONTACT', href: '/contact' },
+    { label: "HOME", href: "/" },
+    { label: "GALLERY", href: "/gallery" },
+    { label: "PEOPLE", href: "/people" },
+    { label: "ENGAGE", href: "/engage" },
+    { label: "CONTACT", href: "/contact" },
     {
-      label: 'ADMISSION',
+      label: "ADMISSION",
       children: [
-        { label: 'UG', href: '/ug' },
-        { label: 'PG', href: '/pg' },
+        { label: "UG", href: "/ug" },
+        { label: "PG", href: "/pg" },
       ],
     },
-    { label: 'RESEARCH', href: '/research' },
+    { label: "RESEARCH", href: "/research" },
     {
-      label: 'ACADEMICS',
+      label: "ACADEMICS",
       children: [
-        { label: 'BTECH', href: '/btech' },
-        { label: 'MSR', href: '/msr' },
-        { label: 'MTECH', href: '/mtech' },
-        { label: 'PHD', href: '/phd' },
+        { label: "BTECH", href: "/btech" },
+        { label: "MSR", href: "/msr" },
+        { label: "MTECH", href: "/mtech" },
+        { label: "PHD", href: "/phd" },
       ],
     },
   ];
 
   const isActive = (href?: string) => {
     if (!href) return false;
-    if (href === '/') return pathname === '/';
+    if (href === "/") return pathname === "/";
     return pathname.startsWith(href);
   };
 
@@ -63,8 +63,8 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-[#222]/85 backdrop-blur-md shadow-lg'
-          : 'bg-[#1f1f1f]/75 backdrop-blur-sm border-b border-white/10'
+          ? "bg-[#222]/85 backdrop-blur-md shadow-lg"
+          : "bg-[#1f1f1f]/75 backdrop-blur-sm border-b border-white/10"
       }`}
     >
       <div className="w-full flex justify-center mx-auto px-6 py-4 md:py-5">
@@ -72,7 +72,11 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-4">
             <div className="w-16 h-16 rounded-full overflow-hidden flex items-center justify-center">
-              <img src="/image.png" alt="IIT Logo" className="w-full h-full object-cover" />
+              <img
+                src="/image.png"
+                alt="IIT Logo"
+                className="w-full h-full object-cover"
+              />
             </div>
             <span className="text-white font-semibold text-2xl tracking-wider">
               IIT DELHI
@@ -91,13 +95,15 @@ export default function Navbar() {
                     key={item.href}
                     href={item.href}
                     className={`group relative text-white text-sm lg:text-base font-semibold tracking-[0.18em] pb-1 transition-colors duration-200 ${
-                      active ? 'text-red-500' : 'hover:text-violet-400'
+                      active ? "text-red-500" : "hover:text-violet-400"
                     }`}
                   >
                     {item.label}
                     <span
                       className={`absolute left-0 -bottom-1 h-0.5 bg-violet-500 transition-all duration-300 ${
-                        active ? 'w-full opacity-100' : 'w-0 opacity-0 group-hover:w-full'
+                        active
+                          ? "w-full opacity-100"
+                          : "w-0 opacity-0 group-hover:w-full"
                       }`}
                     />
                   </Link>
@@ -110,20 +116,24 @@ export default function Navbar() {
                     <Link
                       href={item.href}
                       className={`group inline-flex items-center gap-2 text-white text-sm lg:text-base font-semibold tracking-[0.18em] pb-1 transition-colors duration-200 ${
-                        active ? 'text-red-500' : 'group-hover:text-violet-400'
+                        active ? "text-red-500" : "group-hover:text-violet-400"
                       }`}
                     >
                       {item.label}
                       <span
                         className={`text-xs transition-transform duration-200 ${
-                          active ? 'text-red-400 rotate-180' : 'text-white/70 group-hover:text-violet-300'
+                          active
+                            ? "text-red-400 rotate-180"
+                            : "text-white/70 group-hover:text-violet-300"
                         }`}
                       >
                         ▾
                       </span>
                       <span
                         className={`absolute left-0 -bottom-1 h-0.5 bg-violet-500 transition-all duration-300 ${
-                          active ? 'w-full opacity-100' : 'w-0 opacity-0 group-hover:w-full'
+                          active
+                            ? "w-full opacity-100"
+                            : "w-0 opacity-0 group-hover:w-full"
                         }`}
                       />
                     </Link>
@@ -131,20 +141,20 @@ export default function Navbar() {
                     <button
                       type="button"
                       className={`relative inline-flex items-center gap-2 text-white text-sm lg:text-base font-semibold tracking-[0.18em] pb-1 transition-colors duration-200 ${
-                        active ? 'text-red-500' : 'hover:text-violet-400'
+                        active ? "text-red-500" : "hover:text-violet-400"
                       }`}
                     >
                       {item.label}
                       <span
                         className={`text-xs transition-transform duration-200 ${
-                          active ? 'text-red-400 rotate-180' : 'text-white/70'
+                          active ? "text-red-400 rotate-180" : "text-white/70"
                         }`}
                       >
                         ▾
                       </span>
                       <span
                         className={`absolute left-0 -bottom-1 h-0.5 bg-violet-500 transition-all duration-300 ${
-                          active ? 'w-full opacity-100' : 'w-0 opacity-0'
+                          active ? "w-full opacity-100" : "w-0 opacity-0"
                         }`}
                       />
                     </button>
@@ -155,10 +165,10 @@ export default function Navbar() {
                       absolute left-1/2 top-full mt-4 w-[220px]
                       -translate-x-1/2
                       rounded-lg
-                      bg-gradient-to-b from-[#1c1c1c]/95 to-[#0f0f0f]/95
-                      border border-white/10
-                      shadow-[0_30px_60px_rgba(0,0,0,0.6)]
-                      backdrop-blur-md
+                      bg-[#0f1115]
+                      border border-white/12
+                      shadow-[0_18px_40px_rgba(0,0,0,0.55)]
+                      backdrop-blur-sm
                       opacity-0 translate-y-2 scale-95
                       pointer-events-none
                       transition-all duration-200 ease-out
@@ -170,7 +180,7 @@ export default function Navbar() {
                   >
                     {/* Header */}
                     <div className="px-4 pt-4 pb-2 text-[10px] font-semibold tracking-[0.3em] text-white/40 uppercase">
-                      {item.label}
+                      {/* {item.label} */}
                     </div>
 
                     {/* Links */}
@@ -186,8 +196,8 @@ export default function Navbar() {
                               group/link
                               flex items-center justify-between
                               rounded-md
-                              px-4 py-2.5
-                              text-sm font-medium tracking-wide
+                              px-5 py-3.5
+                              text-sm font-medium tracking-wide text-center
                               transition-all duration-150
                               ${
                                 childActive
@@ -202,7 +212,9 @@ export default function Navbar() {
                               }
                             `}
                           >
-                            <span className='text-xl'>{child.label}</span>
+                            <span className="text-xl w-full text-center">
+                              {child.label}
+                            </span>
 
                             {/* subtle arrow on hover */}
                             <span
@@ -221,7 +233,6 @@ export default function Navbar() {
                       })}
                     </div>
                   </div>
-
                 </div>
               );
             })}
