@@ -1,4 +1,5 @@
 import AnimatedStats from "../components/AnimatedStats";
+import DualCarousel from "../components/DualCarousel";
 
 export default function Home() {
   return (
@@ -19,7 +20,11 @@ export default function Home() {
           <div className="flex flex-col items-start justify-center z-20 px-4 sm:px-8 md:px-12">
             <h1
               className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-black leading-tight mb-8 animate-slide-up"
-              style={{ animationDuration: "2s", animationTimingFunction: "ease", animationFillMode: "both" }}
+              style={{
+                animationDuration: "2s",
+                animationTimingFunction: "ease",
+                animationFillMode: "both",
+              }}
             >
               <span className="block text-yellow-100">MAKING</span>
               <span className="block text-yellow-100">CONNECTIONS</span>
@@ -155,38 +160,37 @@ export default function Home() {
             </h2>
           </div>
 
-          {/* Images layout */}
-          <div className="flex flex-col lg:flex-row gap-6">
-            {/* LEFT: large image */}
-            <div className="lg:flex-[2] w-full">
-              <div className="relative w-full aspect-[4/3] overflow-hidden rounded shadow-lg">
-                <img
-                  src="/robot_1.png"
-                  alt="Intelligent Systems and Robotics"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-              </div>
-            </div>
-
-            {/* RIGHT: stacked images */}
-            <div className="lg:flex-[1] w-full flex flex-col gap-6">
-              <div className="relative w-full aspect-[16/8] overflow-hidden rounded shadow">
-                <img
-                  src="/robot.png"
-                  alt="Research Image 1"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-              </div>
-
-              <div className="relative w-full aspect-[16/8] overflow-hidden rounded shadow">
-                <img
-                  src="/robot.png"
-                  alt="Research Image 2"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
+          <DualCarousel
+            intervalMs={4200}
+            leftImages={[
+              {
+                src: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
+                alt: "Lab 1",
+              },
+              {
+                src: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+                alt: "Lab 2",
+              },
+              {
+                src: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80",
+                alt: "Lab 3",
+              },
+            ]}
+            rightImages={[
+              {
+                src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+                alt: "Device 1",
+              },
+              {
+                src: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+                alt: "Device 2",
+              },
+              {
+                src: "https://images.unsplash.com/photo-1526498460520-4c246339dccb?auto=format&fit=crop&w=800&q=80",
+                alt: "Device 3",
+              },
+            ]}
+          />
 
           {/* Caption */}
           <p className="text-2xl font-semibold text-red-700">
