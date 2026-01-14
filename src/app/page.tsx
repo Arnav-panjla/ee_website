@@ -1,3 +1,5 @@
+import AnimatedStats from "../components/AnimatedStats";
+
 export default function Home() {
   return (
     <div className="w-full flex flex-col">
@@ -6,10 +8,10 @@ export default function Home() {
         className="relative w-full min-h-screen flex items-center justify-center px-4 sm:px-8 md:px-12 lg:px-16 py-12 sm:py-16 md:py-20"
         style={{
           backgroundImage: 'url("/image_iitd.png")',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center',
-          backgroundSize: 'contain',
-          backgroundColor: '#ffffff',
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundColor: "#ffffff",
         }}
       >
         {/* Hero Content */}
@@ -32,8 +34,8 @@ export default function Home() {
           gap-6 sm:gap-8 md:gap-10
           mb-32 px-6 sm:px-8 md:px-12 lg:px-16
           py-12 sm:py-16 md:py-20
-        "    
-          style={{
+        "
+        style={{
           backgroundImage: 'url("/image_iitd.png")',
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
@@ -43,8 +45,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-red-700/90 to-red-700/40 z-0"></div>
 
         <div className="relative z-10 w-full max-w-7xl flex  gap-8 flex-col items-center">
-
-          <div className="mt-10 sm:mt-12 md:mt-16 w-full h-10"></div> 
+          <div className="mt-10 sm:mt-12 md:mt-16 w-full h-10"></div>
 
           <div className="flex justify-center mb-8 sm:mb-12">
             <div className="mb-4 h-2 w-[5vw] bg-white h-1"></div>
@@ -57,9 +58,9 @@ export default function Home() {
             WHAT&apos;S HAPPENING AROUND
           </h1>
 
-            {/* <div className="mt-10 sm:mt-12 md:mt-16 w-full h-10"></div> */}
+          {/* <div className="mt-10 sm:mt-12 md:mt-16 w-full h-10"></div> */}
 
-            <div className="grid w-full gap-8 px-4 mt-32 sm:px-6 justify-center grid-cols-[repeat(auto-fit,minmax(220px,270px))]">
+          <div className="grid w-full gap-8 px-4 mt-32 sm:px-6 justify-center grid-cols-[repeat(auto-fit,minmax(220px,270px))]">
             {[
               // {
               //   title: "Video Title",
@@ -71,37 +72,41 @@ export default function Home() {
                 title: "Video Title",
                 desc: "This is a great space to update your audience with a description of your video. Include information like…",
                 duration: "03:27",
-                thumb: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80",
+                thumb:
+                  "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80",
               },
               {
                 title: "Video Title",
                 desc: "This is a great space to update your audience with a description of your video. Include information like…",
                 duration: "02:05",
-                thumb: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80",
+                thumb:
+                  "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80",
               },
               {
                 title: "Video Title",
                 desc: "This is a great space to update your audience with a description of your video. Include information like…",
                 duration: "03:27",
-                thumb: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80",
+                thumb:
+                  "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80",
               },
               {
                 title: "Video Title",
                 desc: "This is a great space to update your audience with a description of your video. Include information like…",
                 duration: "02:05",
-                thumb: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80",
+                thumb:
+                  "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80",
               },
             ].map((video, idx) => (
               <div
                 key={idx}
-                className="bg-white/10 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-              
+                className="bg-white/10 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+              >
                 <div className="relative w-full h-32 sm:h-36 md:h-40">
                   <img
                     src={video.thumb}
                     alt={video.title}
                     className="w-full h-full object-cover"
-                    style={{ maxHeight: '160px' }}
+                    style={{ maxHeight: "160px" }}
                   />
                   <span className="absolute top-2 right-2 bg-black/60 text-white text-xs px-2 py-1 rounded">
                     {video.duration}
@@ -126,15 +131,10 @@ export default function Home() {
 
           <div className="mt-10 sm:mt-12 md:mt-16 w-full h-12"></div>
         </div>
-
       </section>
-
-
-
 
       <section className="w-full flex flex-col items-center bg-white px-4 sm:px-8 md:px-12 lg:px-16 py-12 sm:py-16 md:py-20">
         <div className="w-full max-w-6xl mx-auto flex flex-col gap-10">
-
           <div className="mt-10 sm:mt-12 md:mt-16 w-full h-12"></div>
 
           {/* Heading */}
@@ -147,7 +147,6 @@ export default function Home() {
 
           {/* Images layout */}
           <div className="flex flex-col lg:flex-row gap-6">
-
             {/* LEFT: large image */}
             <div className="lg:flex-[2] w-full">
               <div className="relative w-full aspect-[4/3] overflow-hidden rounded shadow-lg">
@@ -177,7 +176,6 @@ export default function Home() {
                 />
               </div>
             </div>
-
           </div>
 
           {/* Caption */}
@@ -187,9 +185,7 @@ export default function Home() {
 
           <div className="w-full h-1"></div>
         </div>
-
       </section>
-
 
       {/* Fun Facts / Stats Section - Flexbox Layout */}
       <section
@@ -213,53 +209,21 @@ export default function Home() {
               </h2>
             </div>
 
-            {/* Stats flex container */}
-            <div className="w-full flex flex-wrap justify-center gap-8 sm:gap-12 md:gap-16">
-              {/* Stat 1 */}
-              <div className="flex flex-col items-center text-center min-w-[120px]">
-                <div className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-2">
-                  106
-                </div>
-                <p className="text-gray-100 text-xs sm:text-sm font-semibold whitespace-pre-line">
-                  HAPPY{'\n'}CLIENTS
-                </p>
-              </div>
-
-              {/* Stat 2 */}
-              <div className="flex flex-col items-center text-center min-w-[120px]">
-                <div className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-2">
-                  198
-                </div>
-                <p className="text-gray-100 text-xs sm:text-sm font-semibold whitespace-pre-line">
-                  WEBSITES{'\n'}LAUNCHED
-                </p>
-              </div>
-
-              {/* Stat 3 */}
-              <div className="flex flex-col items-center text-center min-w-[120px]">
-                <div className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-2">
-                  506
-                </div>
-                <p className="text-gray-100 text-xs sm:text-sm font-semibold whitespace-pre-line">
-                  SOCIAL{'\n'}CAMPAIGNS
-                </p>
-              </div>
-
-              {/* Stat 4 */}
-              <div className="flex flex-col items-center text-center min-w-[120px]">
-                <div className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-2">
-                  1603
-                </div>
-                <p className="text-gray-100 text-xs sm:text-sm font-semibold whitespace-pre-line">
-                  CUPS OF{'\n'}COFFEE
-                </p>
-              </div>
-            </div>
+            {/* Stats flex container (animated) */}
+            <AnimatedStats
+              duration={2000}
+              stats={[
+                { value: 106, label: "HAPPY\nCLIENTS" },
+                { value: 198, label: "WEBSITES\nLAUNCHED" },
+                { value: 506, label: "SOCIAL\nCAMPAIGNS" },
+                { value: 1603, label: "CUPS OF\nCOFFEE" },
+              ]}
+            />
           </div>
 
           <div className="w-full h-2"></div>
 
-            {/* image */}
+          {/* image */}
           <div className="flex gap-4 w-full w-full mx-auto px-6">
             {/* Left */}
             <div className="flex flex-col gap-4 w-1/4">
@@ -308,10 +272,8 @@ export default function Home() {
                   className="absolute inset-0 w-full h-full object-cover"
                 />
               </div>
-
             </div>
           </div>
-
         </div>
       </section>
     </div>
