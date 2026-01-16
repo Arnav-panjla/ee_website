@@ -150,7 +150,7 @@ export default function Navbar() {
                           active ? "text-red-400 rotate-180" : "text-white/70"
                         }`}
                       >
-                        ▾
+                        {/* ▾ */}
                       </span>
                       <span
                         className={`absolute left-0 -bottom-1 h-0.5 bg-violet-500 transition-all duration-300 ${
@@ -164,8 +164,8 @@ export default function Navbar() {
                     className="
                       absolute left-1/2 top-full mt-4 w-[220px]
                       -translate-x-1/2
-                      rounded-lg
-                      bg-[#0f1115]
+                      bg-white
+                      text-center
                       border border-white/12
                       shadow-[0_18px_40px_rgba(0,0,0,0.55)]
                       backdrop-blur-sm
@@ -178,13 +178,9 @@ export default function Navbar() {
                       group-hover/item:pointer-events-auto
                     "
                   >
-                    {/* Header */}
-                    <div className="px-4 pt-4 pb-2 text-[10px] font-semibold tracking-[0.3em] text-white/40 uppercase">
-                      {/* {item.label} */}
-                    </div>
 
                     {/* Links */}
-                    <div className="px-2 pb-3 space-y-1">
+                    <div className="px-2 pb-3 space-y-8">
                       {item.children?.map((child) => {
                         const childActive = isActive(child.href);
 
@@ -194,10 +190,9 @@ export default function Navbar() {
                             href={child.href}
                             className={`
                               group/link
-                              flex items-center justify-between
-                              rounded-md
+                              flex items-center justify-center
                               px-5 py-3.5
-                              text-sm font-medium tracking-wide text-center
+                              text-sm font-medium tracking-wide
                               transition-all duration-150
                               ${
                                 childActive
@@ -212,22 +207,9 @@ export default function Navbar() {
                               }
                             `}
                           >
-                            <span className="text-xl w-full text-center">
+                            <div className="text-xl font-italic text-black text-center whitespace-nowrap">
                               {child.label}
-                            </span>
-
-                            {/* subtle arrow on hover */}
-                            <span
-                              className="
-                                text-xs text-white/30
-                                translate-x-1 opacity-0
-                                transition-all duration-150
-                                group-hover/link:opacity-100
-                                group-hover/link:translate-x-0
-                              "
-                            >
-                              →
-                            </span>
+                            </div>
                           </Link>
                         );
                       })}
