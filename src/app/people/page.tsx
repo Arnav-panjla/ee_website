@@ -1,26 +1,6 @@
+import FacultyGrid from "../../components/FacultyGrid";
 
 export default function People() {
-
-  type FacultyCardProps = {
-    name: string;
-    role: string;
-  };
-
-  const FacultyCard = ({name, role }: FacultyCardProps) => (
-      <div className="bg-gray-100 p-6 max-w-xs text-center shadow-sm hover:shadow-md transition">
-        <div className="w-full aspect-[8/9] overflow-hidden mb-4">
-          <img
-            src="/face.png"
-            alt="Faculty-1"
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <h3 className="text-red-600 font-semibold">{name}</h3>
-        <p className="text-xs text-gray-600 mt-1">{role}</p>
-      </div>
-    );
-
-
   return (
     <div className="w-full pt-20">
       {/* Hero Banner */}
@@ -39,14 +19,13 @@ export default function People() {
             ALL FACULTIES
           </h1>
           <p className="mt-4 text-sm md:text-base text-gray-200">
-            The IIT Delhi Electrical Engineering faculty includes renowned professors,
-            associate professors, and assistant professors specialising in areas like
-            power systems, control, signal processing, communications, microelectronics,
-            and AI applications.
+            The IIT Delhi Electrical Engineering faculty includes renowned
+            professors, associate professors, and assistant professors
+            specialising in areas like power systems, control, signal
+            processing, communications, microelectronics, and AI applications.
           </p>
         </div>
       </section>
-
 
       {/* Faculty Section */}
 
@@ -54,7 +33,6 @@ export default function People() {
         <div className="w-auto h-4"></div>
 
         <div className="w-full flex justify-center mx-auto gap-16">
-
           {/* Filter Options */}
           <div className=" bg-red-700 shadow-lg border-6 border-red-700 flex flex-col">
             {/* Research Category */}
@@ -75,14 +53,17 @@ export default function People() {
                 <li
                   key={item}
                   className={`px-4  py-3 text-center text-2xl font-medium cursor-pointer border-2 border-red-700
-                    ${idx % 2 === 0 ? "bg-red-100 text-red-700" : "bg-red-200 text-red-800"}
+                    ${
+                      idx % 2 === 0
+                        ? "bg-red-100 text-red-700"
+                        : "bg-red-200 text-red-800"
+                    }
                     hover:bg-red-300`}
                 >
                   <div className="w-auto h-2"></div>
                   {item}
                   <div className="w-auto h-2"></div>
                 </li>
-                
               ))}
             </ul>
 
@@ -105,7 +86,11 @@ export default function People() {
                 <li
                   key={item}
                   className={`px-4 py-3 text-center text-2xl font-medium cursor-pointer border-6 border-red-700
-                    ${idx % 2 === 0 ? "bg-red-100 text-red-700" : "bg-red-200 text-red-800"}
+                    ${
+                      idx % 2 === 0
+                        ? "bg-red-100 text-red-700"
+                        : "bg-red-200 text-red-800"
+                    }
                     hover:bg-red-300`}
                 >
                   <div className="w-auto h-2"></div>
@@ -116,45 +101,13 @@ export default function People() {
             </ul>
           </div>
 
-
           <div className="flex-1 max-w-4xl">
             <div className="w-auto h-16"></div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 max-w-4xl mx-auto">
-              <FacultyCard
-                name="Tess Brown"
-                role="Office Manager"
-              />
-
-              <FacultyCard
-                name="Krishan Kant"
-                role="Assistant Professor"
-              />
-
-              <FacultyCard
-                name="Don Francis"
-                role="Founder & CEO"
-              />
-              <FacultyCard
-                name="Tess Brown"
-                role="Office Manager"
-              />
-
-              <FacultyCard
-                name="Krishan Kant"
-                role="Assistant Professor"
-              />
-
-              <FacultyCard
-                name="Don Francis"
-                role="Founder & CEO"
-              />
-            </div>
+            <FacultyGrid />
           </div>
         </div>
         <div className="w-auto h-20"></div>
-
       </section>
-
     </div>
   );
 }
