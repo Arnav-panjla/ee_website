@@ -1,0 +1,590 @@
+[
+  {
+    "id": 1,
+    "name": "Gourab Ghatak",
+    "email": "gghatak@ee.iitd.ac.in",
+    "research": "Intelligent Systems and Robotics, AI/ML and Signal Processing, Communications and Computing",
+    "clusters": "Cyber-Physical Systems, Next Gen Communication Networks (5G, 6G and beyond), AI/ML, Intelligence and Learning in Control",
+    "website": "",
+    "category": [
+      "Communications",
+      "Computer Technology",
+      "Control and Automation"
+    ],
+    "img": "/face.png"
+  },
+  {
+    "id": 2,
+    "name": "Tanmoy Chakraborty",
+    "email": "tanchak@ee.iitd.ac.in",
+    "research": "Intelligent Systems and Robotics, AI/ML and Signal Processing",
+    "clusters": "AI/ML, Healthcare",
+    "website": "",
+    "category": ["Computer Technology", "Control and Automation"],
+    "img": "/face.png"
+  },
+  {
+    "id": 3,
+    "name": "Santanu Manna",
+    "email": "mannasan@ee.iitd.ac.in",
+    "research": "Semiconductor Optoelectronic Devices, Semiconductor Epitaxy",
+    "clusters": "Quantum Technology, Epitaxial growth of III-V compound semiconductors, Group-IV heterostructures, Quantum Wells and Dots",
+    "website": "",
+    "category": ["Integrated Electronics and Circuits"],
+    "img": "/face.png"
+  },
+  {
+    "id": 4,
+    "name": "Sreyam Sinha",
+    "email": "sreyamsinha@ee.iitd.ac.in",
+    "research": "e-Mobility and Energy Storage, Renewable Energy Systems, e-Mobility Systems",
+    "clusters": "Energy, E-mobility, Power Electronics, Grid integration, Charging infrastructure, Wireless power transfer, High power density converters",
+    "website": "",
+    "category": ["Power Engineering"],
+    "img": "/face.png"
+  },
+  {
+    "id": 5,
+    "name": "Seshan Srirangarajan",
+    "email": "seshan@ee.iitd.ac.in",
+    "research": "AI/ML and Signal Processing, Communications and Computing",
+    "clusters": "Next Gen Communication Networks (5G, 6G and beyond), AI/ML, Multimedia – Signal and Image Processing",
+    "website": "",
+    "category": ["Communications", "Computer Technology"],
+    "img": "/face.png"
+  },
+  {
+    "id": 6,
+    "name": "Krishan Kant",
+    "email": "kkbhalla@iitd.ac.in",
+    "research": "e-Mobility and Energy Storage, Precision Mechatronics",
+    "clusters": "Energy, Power Electronics, Inverter based resources, Grid integration, Machine design and control, Electromechanical Design, Mechatronics",
+    "website": "",
+    "category": ["Power Engineering"],
+    "img": "/face.png"
+  },
+  {
+    "id": 7,
+    "name": "Subashish Datta",
+    "email": "subashish@ee.iitd.ac.in",
+    "research": "Intelligent Systems and Robotics",
+    "clusters": "Robotics – Robotic Vehicles, Intelligence and Learning in Control, Mathematical Control, Smart AC/DC grid, Microgrids, DER planning",
+    "website": "",
+    "category": ["Control and Automation"],
+    "img": "/face.png"
+  },
+  {
+    "id": 8,
+    "name": "Abhijit Abhyankar",
+    "email": "abhyankar@ee.iitd.ac.in",
+    "research": "Smart and Sustainable Power Systems, Renewable Energy Systems, Intelligent and Resilient Power Grid",
+    "clusters": "Energy, E-mobility, Power Systems, Grid stability, Energy market and policy, Smart AC/DC grid, Microgrids, DER planning, Charging infrastructure, Distribution Systems Optimization",
+    "website": "",
+    "category": ["Power Engineering"],
+    "img": "/face.png"
+  },
+  {
+    "id": 9,
+    "name": "Ankit Singhal",
+    "email": "sankit@iitd.ac.in",
+    "research": "Smart and Sustainable Power Systems, Renewable Energy Systems, Intelligent and Resilient Power Grid, e-Mobility Systems",
+    "clusters": "Energy, Power Systems, Grid stability, Energy market, Microgrids, DER planning, Inverter based resources",
+    "website": "",
+    "category": ["Power Engineering"],
+    "img": "/face.png"
+  },
+  {
+    "id": 10,
+    "name": "Vivek Venkataraman",
+    "email": "vivekv@iitd.ac.in",
+    "research": "Communications and Computing",
+    "clusters": "Quantum Technology, Fiber-optics & integrated photonics",
+    "website": "",
+    "category": ["Communications"],
+    "img": "/face.png"
+  },
+  {
+    "id": 11,
+    "name": "Shubhendu Bhasin",
+    "email": "sbhasin@ee.iitd.ac.in",
+    "research": "Intelligent Systems and Robotics",
+    "clusters": "Cyber-Physical Systems, Robotics – Robotic Vehicles, Intelligence and Learning in Control, Mathematical Control",
+    "website": "",
+    "category": ["Control and Automation"],
+    "img": "/face.png"
+  },
+  {
+    "id": 12,
+    "name": "Lalan Kumar",
+    "email": "lkumar@ee.iitd.ac.in",
+    "research": "AI/ML and Signal Processing",
+    "clusters": "Multimedia – Signal and Image Processing, Neuro-AI, Neural signal processing",
+    "website": "",
+    "category": ["Computer Technology"],
+    "img": "/face.png"
+  },
+  {
+    "id": 13,
+    "name": "Anandarup Das",
+    "email": "anandarup@ee.iitd.ac.in",
+    "research": "e-Mobility and Energy Storage, Smart and Sustainable Power Systems, Renewable Energy Systems, Intelligent and Resilient Power Grid, e-Mobility Systems",
+    "clusters": "Energy, E-mobility, Power Electronics, Grid stability, Smart AC/DC grid, Inverter based resources, Power quality, Solar/wind planning, Battery storage, HVDC, Charging infrastructure, WBG devices",
+    "website": "",
+    "category": ["Power Engineering"],
+    "img": "/face.png"
+  },
+  {
+    "id": 14,
+    "name": "Swades De",
+    "email": "swadesd@ee.iitd.ac.in",
+    "research": "Communications and Computing",
+    "clusters": "Energy, Cyber-Physical Systems, Next Gen Communication Networks (5G, 6G and beyond), AI/ML, Wireless power transfer",
+    "website": "",
+    "category": ["Communications"],
+    "img": "/face.png"
+  },
+  {
+    "id": 15,
+    "name": "Amol Choudhary",
+    "email": "achoudhary@ee.iitd.ac.in",
+    "research": "Communications and Computing",
+    "clusters": "Next Gen Communication Networks (5G, 6G and beyond)",
+    "website": "https://sites.google.com/view/ufochip/home",
+    "category": ["Communications"],
+    "img": "/face.png"
+  },
+  {
+    "id": 16,
+    "name": "Shaunak Sen",
+    "email": "shaunak.sen@ee.iitd.ac.in",
+    "research": "Intelligent Systems and Robotics",
+    "clusters": "Cyber-Physical Systems, Intelligence and Learning in Control, Mathematical Control, Biology as Circuits & Systems",
+    "website": "",
+    "category": ["Control and Automation"],
+    "img": "/face.png"
+  },
+  {
+    "id": 17,
+    "name": "Sumit Pramanick",
+    "email": "spramanick@ee.iitd.ac.in",
+    "research": "e-Mobility and Energy Storage, Renewable Energy Systems, e-Mobility Systems",
+    "clusters": "E-mobility, Power Electronics, Grid integration, Battery storage, Charging infrastructure, Drivetrain, Wireless power transfer, WBG devices",
+    "website": "",
+    "category": ["Power Engineering"],
+    "img": "/face.png"
+  },
+  {
+    "id": 18,
+    "name": "Arpan Chattopadhyay",
+    "email": "arpanc@ee.iitd.ac.in",
+    "research": "Intelligent Systems and Robotics, AI/ML and Signal Processing, Communications and Computing",
+    "clusters": "Quantum Technology, Cyber-Physical Systems, Next Gen Communication Networks, Multi-sensory Media & Spatial Computing, AI/ML, Intelligence and Learning in Control, Online learning, radar signal processing",
+    "website": "",
+    "category": [
+      "Communications",
+      "Computer Technology",
+      "Control and Automation"
+    ],
+    "img": "/face.png"
+  },
+  {
+    "id": 19,
+    "name": "Priyank Srivastava",
+    "email": "psrivast@iitd.ac.in",
+    "research": "Intelligent Systems and Robotics, Intelligent and Resilient Power Grid",
+    "clusters": "Cyber-Physical Systems, Power Systems, Intelligence and Learning in Control, Mathematical Control",
+    "website": "",
+    "category": ["Control and Automation", "Power Engineering"],
+    "img": "/face.png"
+  },
+  {
+    "id": 20,
+    "name": "Janardhanan",
+    "email": "janas@ee.iitd.ac.in",
+    "research": "Intelligent Systems and Robotics, Mathematical Control",
+    "clusters": "Cyber-Physical Systems, Robotics – Robotic Vehicles, Intelligence and Learning in Control, Robustness, Reliability and Optimality, Mathematical Control",
+    "website": "",
+    "category": ["Control and Automation"],
+    "img": "/face.png"
+  },
+  {
+    "id": 21,
+    "name": "Amartansh Dubey",
+    "email": "amardubey@iitd.ac.in",
+    "research": "AI/ML and Signal Processing, Communications and Computing, RF and Microwave Imaging",
+    "clusters": "Next Gen Communication Networks (5G, 6G and beyond), AI/ML",
+    "website": "",
+    "category": ["Communications", "Computer Technology"],
+    "img": "/face.png"
+  },
+  {
+    "id": 22,
+    "name": "Shankar Prakriya",
+    "email": "shankar@ee.iitd.ac.in",
+    "research": "Communications and Computing",
+    "clusters": "Cyber-Physical Systems, Next Gen Communication Networks (5G, 6G and beyond)",
+    "website": "",
+    "category": ["Communications"],
+    "img": "/face.png"
+  },
+  {
+    "id": 23,
+    "name": "Nilanjan Senroy",
+    "email": "nsenroy@ee.iitd.ac.in",
+    "research": "Smart and Sustainable Power Systems, Renewable Energy Systems, Intelligent and Resilient Power Grid",
+    "clusters": "Energy, Power Systems, Grid stability, Grid protection, Smart AC/DC grid, Microgrids, DER planning, Inverter based resources, Solar/wind planning, Grid integration",
+    "website": "",
+    "category": ["Power Engineering"],
+    "img": "/face.png"
+  },
+  {
+    "id": 24,
+    "name": "Mustafijur Rahman",
+    "email": "mustafijur@ee.iitd.ac.in",
+    "research": "Microelectronics and VLSI",
+    "clusters": "CMOS analog/RF/mm-wave integrated circuits & systems, CMOS cryogenic integrated circuits for quantum computers",
+    "website": "",
+    "category": ["Integrated Electronics and Circuits"],
+    "img": "/face.png"
+  },
+  {
+    "id": 25,
+    "name": "Anuj Dhawan",
+    "email": "adhawan@ee.iitd.ac.in",
+    "research": "Microelectronics and VLSI",
+    "clusters": "MEMS, Sensors, Actuators, Flexible and Printed Electronics, Photonic Devices and Integrated Systems, Plasmonics",
+    "website": "",
+    "category": ["Integrated Electronics and Circuits"],
+    "img": "/face.png"
+  },
+  {
+    "id": 26,
+    "name": "Dhiman Mallick",
+    "email": "dhiman@ee.iitd.ac.in",
+    "research": "Microelectronics and VLSI",
+    "clusters": "MEMS, Sensors, Actuators, Flexible and Printed Electronics, Energy Harvesting, Healthcare",
+    "website": "",
+    "category": ["Integrated Electronics and Circuits"],
+    "img": "/face.png"
+  },
+  {
+    "id": 27,
+    "name": "S. D. Joshi",
+    "email": "sdjoshi@ee.iitd.ac.in",
+    "research": "AI/ML and Signal Processing",
+    "clusters": "AI/ML, Multimedia – Signal and Image Processing, Healthcare, Neuro-AI, Biology as Circuits & Systems, Mathematical Control",
+    "website": "",
+    "category": ["Computer Technology"],
+    "img": "/face.png"
+  },
+  {
+    "id": 28,
+    "name": "Santanu Chaudhury",
+    "email": "santanuc@ee.iitd.ac.in",
+    "research": "AI/ML and Signal Processing, Intelligent Systems and Robotics",
+    "clusters": "AI/ML, Multimedia – Signal and Image Processing, Cyber-Physical Systems, Healthcare, Neuro-AI, Intelligence and Learning in Control",
+    "website": "",
+    "category": ["Computer Technology", "Control and Automation"],
+    "img": "/face.png"
+  },
+  {
+    "id": 29,
+    "name": "Subrat Kar",
+    "email": "subrat@ee.iitd.ac.in",
+    "research": "Communications and Computing",
+    "clusters": "Next Gen Communication Networks (5G/6G), Cyber-Physical Systems, Multimedia – Signal and Image Processing, Robustness, Reliability and Optimality, Sensors",
+    "website": "",
+    "category": ["Communications"],
+    "img": "/face.png"
+  },
+  {
+    "id": 30,
+    "name": "M. Veerachary",
+    "email": "mvchary@ee.iitd.ac.in",
+    "research": "e-Mobility and Energy Storage, Smart and Sustainable Power Systems, Renewable Energy Systems",
+    "clusters": "Power Electronics, Power Systems, Battery energy storage, Charging infrastructure, Intelligence and Learning in Control, Smart AC/DC grid, Microgrids",
+    "website": "",
+    "category": ["Power Engineering"],
+    "img": "/face.png"
+  },
+  {
+    "id": 31,
+    "name": "Shouri Chatterjee",
+    "email": "shouri@ee.iitd.ac.in",
+    "research": "Microelectronics and VLSI",
+    "clusters": "Analog and RF CMOS IC, VLSI Systems Design, Cyber-Physical Systems",
+    "website": "",
+    "category": ["Integrated Electronics and Circuits"],
+    "img": "/face.png"
+  },
+  {
+    "id": 32,
+    "name": "Saif Khan Mohammed",
+    "email": "saifkm@ee.iitd.ac.in",
+    "research": "Communications and Computing",
+    "clusters": "Next Gen Communication Networks (5G, 6G and beyond), Multimedia – Signal Processing",
+    "website": "",
+    "category": ["Communications"],
+    "img": "/face.png"
+  },
+  {
+    "id": 33,
+    "name": "Tapan K. Gandhi",
+    "email": "tgandhi@ee.iitd.ac.in",
+    "research": "AI/ML and Signal Processing",
+    "clusters": "AI/ML, Multimedia – Signal and Image Processing, Healthcare, Neuro-AI, Cyber-Physical Systems, Biology as Circuits & Systems",
+    "website": "",
+    "category": ["Computer Technology"],
+    "img": "/face.png"
+  },
+  {
+    "id": 34,
+    "name": "Manan Suri",
+    "email": "manansuri@ee.iitd.ac.in",
+    "research": "Microelectronics and VLSI, AI/ML and Signal Processing",
+    "clusters": "VLSI Systems Design, Neuromorphic VLSI, AI/ML, Multimedia – Signal and Image Processing, Cyber-Physical Systems",
+    "website": "",
+    "category": ["Integrated Electronics and Circuits", "Computer Technology"],
+    "img": "/face.png"
+  },
+  {
+    "id": 35,
+    "name": "Soumya Shubhra Nag",
+    "email": "ssnag@ee.iitd.ac.in",
+    "research": "e-Mobility and Energy Storage, Smart and Sustainable Power Systems, Renewable Energy Systems",
+    "clusters": "Power Electronics, E-mobility, Smart AC/DC grid, Microgrids, Grid protection, Inverter based resources, Power quality, WBG devices, Charging infrastructure",
+    "website": "",
+    "category": ["Power Engineering"],
+    "img": "/face.png"
+  },
+  {
+    "id": 36,
+    "name": "Jayadeva",
+    "email": "jayadeva@ee.iitd.ac.in",
+    "research": "AI/ML and Signal Processing",
+    "clusters": "AI/ML, Multimedia – Signal and Image Processing, Neuro-AI, Healthcare",
+    "website": "",
+    "category": ["Computer Technology"],
+    "img": "/face.png"
+  },
+  {
+    "id": 37,
+    "name": "Ranjan Bose",
+    "email": "rbose@ee.iitd.ac.in",
+    "research": "Communications and Computing, Smart and Sustainable Power Systems, Renewable Energy Systems",
+    "clusters": "Next Gen Communication Networks (5G, 6G and beyond), Energy, Power Systems, Cyber-Physical Systems, AI/ML, E-mobility",
+    "website": "",
+    "category": ["Communications", "Power Engineering"],
+    "img": "/face.png"
+  },
+  {
+    "id": 38,
+    "name": "R. K. Mallik",
+    "email": "rkmallik@ee.iitd.ac.in",
+    "research": "Communications and Computing",
+    "clusters": "Next Gen Communication Networks (5G, 6G and beyond), Quantum Technology, AI/ML, Multimedia – Signal and Image Processing, Mathematical Control",
+    "website": "",
+    "category": ["Communications"],
+    "img": "/face.png"
+  },
+  {
+    "id": 39,
+    "name": "Indra Narayan Kar",
+    "email": "ink@ee.iitd.ac.in",
+    "research": "Intelligent Systems and Robotics, Smart and Sustainable Power Systems",
+    "clusters": "Robotics – Robotic Vehicles, Intelligence and Learning in Control, Mathematical Control, Power Electronics, Power Systems, Cyber-Physical Systems, AI/ML, Grid Stability Enhancement",
+    "website": "",
+    "category": ["Control and Automation", "Power Engineering"],
+    "img": "/face.png"
+  },
+  {
+    "id": 40,
+    "name": "Sukumar Mishra",
+    "email": "sukumar@ee.iitd.ac.in",
+    "research": "Smart and Sustainable Power Systems, Renewable Energy Systems",
+    "clusters": "Power Systems, Power Electronics, AI/ML, Cyber-Physical Systems, Smart AC/DC grid, Microgrids, Grid stability, Grid protection, Battery storage, Solar/wind planning",
+    "website": "",
+    "category": ["Power Engineering"],
+    "img": "/face.png"
+  },
+  {
+    "id": 41,
+    "name": "B. K. Panigrahi",
+    "email": "bkpanigrahi@ee.iitd.ac.in",
+    "research": "Smart and Sustainable Power Systems, e-Mobility and Energy Storage, Intelligent and Resilient Power Grid",
+    "clusters": "Power Systems, Power Electronics, AI/ML, Cyber-Physical Systems, Energy, Grid Stability, Smart AC/DC grid, Microgrids, Battery storage, Charging infrastructure",
+    "website": "",
+    "category": ["Power Engineering"],
+    "img": "/face.png"
+  },
+  {
+    "id": 42,
+    "name": "Sumantra Dutta Roy",
+    "email": "sumantra@ee.iitd.ac.in",
+    "research": "AI/ML and Signal Processing",
+    "clusters": "AI/ML, Multimedia – Signal and Image Processing, Healthcare, Quantum Technology, Robotics – Robotic Vehicles, Cyber-Physical Systems",
+    "website": "",
+    "category": ["Computer Technology"],
+    "img": "/face.png"
+  },
+  {
+    "id": 43,
+    "name": "Brejesh Lall",
+    "email": "brejesh@ee.iitd.ac.in",
+    "research": "AI/ML and Signal Processing, Communications and Computing",
+    "clusters": "AI/ML, Multimedia – Signal and Image Processing, Next Gen Communication Networks, Cyber-Physical Systems, Healthcare, Robotics, Multi-sensory Media & Spatial Computing, Neuro-AI",
+    "website": "",
+    "category": ["Computer Technology", "Communications"],
+    "img": "/face.png"
+  },
+  {
+    "id": 44,
+    "name": "Manav Bhatnagar",
+    "email": "manav@ee.iitd.ac.in",
+    "research": "Communications and Computing, AI/ML and Signal Processing",
+    "clusters": "Next Gen Communication Networks (5G, 6G and beyond), AI/ML, Multimedia – Signal and Image Processing, Cyber-Physical Systems, Mathematical Control, E-mobility",
+    "website": "",
+    "category": ["Communications", "Computer Technology"],
+    "img": "/face.png"
+  },
+  {
+    "id": 45,
+    "name": "Madhusudan Singh",
+    "email": "msingh@ee.iitd.ac.in",
+    "research": "Microelectronics and VLSI",
+    "clusters": "Flexible and Printed Electronics, MEMS, Sensors, Actuators, Energy",
+    "website": "",
+    "category": ["Integrated Electronics and Circuits"],
+    "img": "/face.png"
+  },
+  {
+    "id": 46,
+    "name": "Mukul Sarkar",
+    "email": "msarkar@ee.iitd.ac.in",
+    "research": "Microelectronics and VLSI",
+    "clusters": "VLSI Systems Design, Analog and RF CMOS IC, MEMS, Sensors, Actuators, Multimedia – Signal and Image Processing, AI/ML, Healthcare",
+    "website": "",
+    "category": ["Integrated Electronics and Circuits"],
+    "img": "/face.png"
+  },
+  {
+    "id": 47,
+    "name": "Abhisek Dixit",
+    "email": "adixit@ee.iitd.ac.in",
+    "research": "Microelectronics and VLSI",
+    "clusters": "Hardware for Quantum Computing, VLSI Systems Design, Analog and RF CMOS IC, Robustness, Reliability and Optimality",
+    "website": "",
+    "category": ["Integrated Electronics and Circuits"],
+    "img": "/face.png"
+  },
+  {
+    "id": 48,
+    "name": "Amit Kumar Jain",
+    "email": "amitjain@ee.iitd.ac.in",
+    "research": "Smart and Sustainable Power Systems",
+    "clusters": "Power Electronics, Power Systems, Energy, Machine Design and Control for Energy Generation",
+    "website": "",
+    "category": ["Power Engineering"],
+    "img": "/face.png"
+  },
+  {
+    "id": 49,
+    "name": "Bhaskar Mitra",
+    "email": "bmitra@ee.iitd.ac.in",
+    "research": "Microelectronics and VLSI",
+    "clusters": "MEMS, Sensors, Actuators, Flexible and Printed Electronics",
+    "website": "",
+    "category": ["Integrated Electronics and Circuits"],
+    "img": "/face.png"
+  },
+  {
+    "id": 50,
+    "name": "Abhishek Dixit",
+    "email": "abhishek.dixit@iitd.ac.in",
+    "research": "Communications and Computing",
+    "clusters": "Next Gen Communication Networks (5G, 6G and beyond), AI/ML, Multimedia – Signal and Image Processing, Cyber-Physical Systems, Mathematical Control, Healthcare",
+    "website": "",
+    "category": ["Communications"],
+    "img": "/face.png"
+  },
+  {
+    "id": 51,
+    "name": "Deepak U. Patil",
+    "email": "deepakpatil@ee.iitd.ac.in",
+    "research": "Intelligent Systems and Robotics, Smart and Sustainable Power Systems",
+    "clusters": "Intelligence and Learning in Control, Mathematical Control, Robustness, Reliability and Optimality, Cyber-Physical Systems, Power Systems, Power Electronics",
+    "website": "",
+    "category": ["Control and Automation", "Power Engineering"],
+    "img": "/face.png"
+  },
+  {
+    "id": 52,
+    "name": "Harshan Jagadeesh",
+    "email": "jharshan@ee.iitd.ac.in",
+    "research": "Communications and Computing",
+    "clusters": "Next Gen Communication Networks 5G/6G, Cyber-Physical Systems, AI/ML, Robustness, Reliability and Optimality, Mathematical Control",
+    "website": "",
+    "category": ["Communications"],
+    "img": "/face.png"
+  },
+  {
+    "id": 53,
+    "name": "Ankesh Jain",
+    "email": "ankesh@ee.iitd.ac.in",
+    "research": "Microelectronics and VLSI",
+    "clusters": "Analog and RF CMOS IC, VLSI Systems, MEMS, Sensors, Actuators, Flexible and Printed Electronics, Energy",
+    "website": "",
+    "category": ["Integrated Electronics and Circuits"],
+    "img": "/face.png"
+  },
+  {
+    "id": 54,
+    "name": "Rakesh K. Palani",
+    "email": "rakesh@ee.iitd.ac.in",
+    "research": "Microelectronics and VLSI",
+    "clusters": "VLSI Systems Design, Analog and RF CMOS IC, VLSI Systems, Robustness, Reliability and Optimality",
+    "website": "",
+    "category": ["Integrated Electronics and Circuits"],
+    "img": "/face.png"
+  },
+  {
+    "id": 55,
+    "name": "Sandeep Kumar",
+    "email": "ksandeep@ee.iitd.ac.in",
+    "research": "AI/ML and Signal Processing",
+    "clusters": "AI/ML, Multimedia – Signal and Image Processing, Robustness, Reliability and Optimality, Healthcare, Mathematical Control, Cyber-Physical Systems",
+    "website": "",
+    "category": ["Computer Technology"],
+    "img": "/face.png"
+  },
+  {
+    "id": 56,
+    "name": "Soutik Betal",
+    "email": "soutik@ee.iitd.ac.in",
+    "research": "Intelligent Systems and Robotics, e-Mobility and Energy Storage",
+    "clusters": "Energy, Healthcare, MEMS/Sensors/Actuators, Flexible Electronics, Bio-Circuits",
+    "website": "",
+    "category": ["Control and Automation", "Power Engineering"],
+    "img": "/face.png"
+  },
+  {
+    "id": 57,
+    "name": "Yashasvi Bansal",
+    "email": "yashasvi@ee.iitd.ac.in",
+    "research": "Smart and Sustainable Power Systems, Intelligent and Resilient Power Grid",
+    "clusters": "Power Systems, Grid stability, Grid protection, Smart AC/DC grid, DER planning, Power quality, Inverter based resources, Energy, Power Electronics",
+    "website": "",
+    "category": ["Power Engineering"],
+    "img": "/face.png"
+  },
+  {
+    "id": 58,
+    "name": "Debidas Kundu",
+    "email": "debidask@ee.iitd.ac.in",
+    "research": "Communications and Computing",
+    "clusters": "Next Gen Communication Networks (5G, 6G and beyond), Analog and RF CMOS IC",
+    "website": "",
+    "category": ["Communications"],
+    "img": "/face.png"
+  }
+]
