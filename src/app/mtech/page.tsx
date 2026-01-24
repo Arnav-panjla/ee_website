@@ -1,6 +1,29 @@
+"use client";
+
+import { useEffect, useRef } from "react";
+
 export default function MtechPage() {
+  const containerRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const nodes = containerRef.current?.querySelectorAll<HTMLElement>(".sa-item");
+    if (!nodes) return;
+
+    const obs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) entry.target.classList.add("in-view");
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    nodes.forEach((el) => obs.observe(el));
+    return () => obs.disconnect();
+  }, []);
+
   return (
-    <div className="w-full pt-20">
+    <div ref={containerRef} className="w-full pt-20">
       <section
         className="relative w-full min-h-[50vh] flex items-center justify-center text-center"
         style={{
@@ -12,7 +35,7 @@ export default function MtechPage() {
         }}
       >
         <div className="absolute inset-0 bg-black/45" />
-        <div className="relative z-10 space-y-3 px-4 max-w-3xl">
+        <div className="relative z-10 space-y-3 px-4 max-w-3xl sa-item from-left">
           <p className="text-sm font-semibold text-white tracking-[0.28em]">ACADEMICS</p>
           <h1 className="text-7xl font-extrabold text-white">M.tech</h1>
             Focused training in semiconductor technology, VLSI, and intelligent hardware design. Prepares students for cutting-edge roles in chip design, electronics innovation, and next-gen semiconductor technologies.        </div>
@@ -24,7 +47,7 @@ export default function MtechPage() {
 
       <section className="bg-white flex justify-center px-6 py-16">
         <div className="max-w-6xl  mx-auto flex items-center gap-10 space-y-10">
-            <div className="flex-[5] text-center">
+          <div className="flex-[5] text-center sa-item from-left">
                 <div className="w-auto h-6"></div>
                 <h1 className="text-5xl  text-orange-700">
                     MTECH
@@ -36,7 +59,7 @@ export default function MtechPage() {
                 </p>
             </div>
 
-            <div className="flex-[4] flex-col items-center gap-4 space-y-10">
+            <div className="flex-[4] flex-col items-center gap-4 space-y-10 sa-item from-right">
               <div className="flex items-center gap-2">
                 <div className="flex-[1] aspect-[1/1] overflow-hidden mb-4">
                     <img
@@ -72,9 +95,9 @@ export default function MtechPage() {
         <div className="w-auto h-6 bg-white"></div>
         <div className="max-w-7xl  mx-auto flex flex-col items-center gap-4 space-y-10">
             <div className=" w-auto h-1 bg-transparent"></div>
-            <h1 className="text-5xl text-white uppercase">Major research outcomes</h1>
-            <div className="flex items-center gap-4 space-y-10">
-                <div className="flex-[1] aspect-[3/4] overflow-hidden mb-4">
+          <h1 className="text-5xl text-white uppercase sa-item from-left">Major research outcomes</h1>
+          <div className="flex items-center gap-4 space-y-10 sa-item from-right">
+            <div className="flex-[1] aspect-[3/4] overflow-hidden mb-4">
                     <img
                         src="/msr1.png"
                         alt="Faculty-1"
@@ -108,7 +131,7 @@ export default function MtechPage() {
         <div className="max-w-6xl mx-auto">
 
             {/* Title */}
-            <h2 className="text-center text-4xl font-semibold text-red-600 mb-10">
+            <h2 className="text-center text-4xl font-semibold text-red-600 mb-10 sa-item from-left">
             Objective of the Programme:
             </h2>
             <div className="w-auto h-8"></div>
@@ -122,7 +145,7 @@ export default function MtechPage() {
             ].map((text, idx) => (
                 <div
                 key={idx}
-                className="bg-gray-200 shadow-lg rounded-lg px-6 py-6 text-xl text-red-600 leading-relaxed text-center"
+              className="bg-gray-200 shadow-lg rounded-lg px-6 py-6 text-xl text-red-600 leading-relaxed text-center sa-item from-right"
                 >
                 {text}
                 </div>
