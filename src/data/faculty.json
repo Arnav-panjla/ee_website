@@ -31,7 +31,7 @@
     "clusters": "Quantum Technology, Epitaxial growth of III-V compound semiconductors, Group-IV heterostructures, Quantum Wells and Dots",
     "website": "",
     "category": ["Integrated Electronics and Circuits"],
-    "img": "/face.png"
+    "img": "/ee_site/santanu_manna.jpg"
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "clusters": "Energy, E-mobility, Power Electronics, Grid integration, Charging infrastructure, Wireless power transfer, High power density converters",
     "website": "",
     "category": ["Power Engineering"],
-    "img": "/face.png"
+    "img": "/ee_site/shreyam_sinha.jpg"
   },
   {
     "id": 5,
@@ -51,7 +51,7 @@
     "clusters": "Next Gen Communication Networks (5G, 6G and beyond), AI/ML, Multimedia – Signal and Image Processing",
     "website": "",
     "category": ["Communications", "Computer Technology"],
-    "img": "/face.png"
+    "img": "/ee_site/seshan_srirangarajan.jpg"
   },
   {
     "id": 6,
@@ -61,7 +61,7 @@
     "clusters": "Energy, Power Electronics, Inverter based resources, Grid integration, Machine design and control, Electromechanical Design, Mechatronics",
     "website": "",
     "category": ["Power Engineering"],
-    "img": "/face.png"
+    "img": "/ee_site/krishan_kant.jpg"
   },
   {
     "id": 7,
@@ -111,7 +111,7 @@
     "clusters": "Cyber-Physical Systems, Robotics – Robotic Vehicles, Intelligence and Learning in Control, Mathematical Control",
     "website": "",
     "category": ["Control and Automation"],
-    "img": "/face.png"
+    "img": "/ee_site/shubhendu_bhasin.jpg"
   },
   {
     "id": 12,
@@ -225,7 +225,7 @@
     "clusters": "Cyber-Physical Systems, Next Gen Communication Networks (5G, 6G and beyond)",
     "website": "",
     "category": ["Communications"],
-    "img": "/face.png"
+    "img": "/ee_site/shankar_prakriya.jpg"
   },
   {
     "id": 23,
@@ -295,7 +295,7 @@
     "clusters": "Next Gen Communication Networks (5G/6G), Cyber-Physical Systems, Multimedia – Signal and Image Processing, Robustness, Reliability and Optimality, Sensors",
     "website": "",
     "category": ["Communications"],
-    "img": "/face.png"
+    "img": "/ee_site/subrat_kar.jpg"
   },
   {
     "id": 30,
@@ -335,7 +335,7 @@
     "clusters": "AI/ML, Multimedia – Signal and Image Processing, Healthcare, Neuro-AI, Cyber-Physical Systems, Biology as Circuits & Systems",
     "website": "",
     "category": ["Computer Technology"],
-    "img": "/face.png"
+    "img": "/ee_site/tapan_gandhi.jpg"
   },
   {
     "id": 34,
@@ -345,7 +345,7 @@
     "clusters": "VLSI Systems Design, Neuromorphic VLSI, AI/ML, Multimedia – Signal and Image Processing, Cyber-Physical Systems",
     "website": "",
     "category": ["Integrated Electronics and Circuits", "Computer Technology"],
-    "img": "/face.png"
+    "img": "/ee_site/manan_suri.jpg"
   },
   {
     "id": 35,
@@ -425,7 +425,7 @@
     "clusters": "AI/ML, Multimedia – Signal and Image Processing, Healthcare, Quantum Technology, Robotics – Robotic Vehicles, Cyber-Physical Systems",
     "website": "",
     "category": ["Computer Technology"],
-    "img": "/face.png"
+    "img": "/ee_site/sumantra_dutta_roy.jpg"
   },
   {
     "id": 43,
@@ -455,7 +455,7 @@
     "clusters": "Flexible and Printed Electronics, MEMS, Sensors, Actuators, Energy",
     "website": "",
     "category": ["Integrated Electronics and Circuits"],
-    "img": "/face.png"
+    "img": "/ee_site/madhusudan_singh.jpg"
   },
   {
     "id": 46,
@@ -465,7 +465,7 @@
     "clusters": "VLSI Systems Design, Analog and RF CMOS IC, MEMS, Sensors, Actuators, Multimedia – Signal and Image Processing, AI/ML, Healthcare",
     "website": "",
     "category": ["Integrated Electronics and Circuits"],
-    "img": "/face.png"
+    "img": "/ee_site/mukul_sarkar.jpg"
   },
   {
     "id": 47,
@@ -535,7 +535,7 @@
     "clusters": "Analog and RF CMOS IC, VLSI Systems, MEMS, Sensors, Actuators, Flexible and Printed Electronics, Energy",
     "website": "",
     "category": ["Integrated Electronics and Circuits"],
-    "img": "/face.png"
+    "img": "/ee_site/ankesh_jain.jpg"
   },
   {
     "id": 54,
@@ -565,7 +565,7 @@
     "clusters": "Energy, Healthcare, MEMS/Sensors/Actuators, Flexible Electronics, Bio-Circuits",
     "website": "",
     "category": ["Control and Automation", "Power Engineering"],
-    "img": "/face.png"
+    "img": "/ee_site/soutik_betal.jpg"
   },
   {
     "id": 57,
@@ -575,7 +575,7 @@
     "clusters": "Power Systems, Grid stability, Grid protection, Smart AC/DC grid, DER planning, Power quality, Inverter based resources, Energy, Power Electronics",
     "website": "",
     "category": ["Power Engineering"],
-    "img": "/face.png"
+    "img": "/ee_site/yashasvi_bansal.jpg"
   },
   {
     "id": 58,

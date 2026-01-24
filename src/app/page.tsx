@@ -194,11 +194,11 @@ export default function Home() {
           />
 
           {/* Caption */}
-          <p className="text-2xl font-semibold text-red-700">
+          {/* <p className="text-2xl font-semibold text-red-700">
             Intelligent Systems and Robotics
           </p>
 
-          <div className="w-full h-1"></div>
+          <div className="w-full h-1"></div> */}
         </div>
       </section>
 
