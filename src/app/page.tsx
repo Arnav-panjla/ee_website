@@ -1,5 +1,6 @@
 import AnimatedStats from "../components/AnimatedStats";
 import DualCarousel from "../components/DualCarousel";
+import ScrollAnimatedImages from "../components/ScrollAnimatedImages";
 
 export default function Home() {
   return (
@@ -238,56 +239,17 @@ export default function Home() {
           <div className="w-full h-2"></div>
 
           {/* image */}
-          <div className="flex gap-4 w-full w-full mx-auto px-6">
-            {/* Left */}
-            <div className="flex flex-col gap-4 w-1/4">
-              <div className="relative w-full aspect-[16/9] overflow-hidden rounded shadow">
-                <img
-                  src="/shoes.png"
-                  alt="Shoes"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-              </div>
-
-              <div className="relative w-full aspect-[16/9] overflow-hidden rounded shadow">
-                <img
-                  src="/car.png"
-                  alt="Car"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-              </div>
-            </div>
-
-            {/* Center */}
-            <div className="w-2/4">
-              <div className="relative w-full aspect-[16/9] overflow-hidden rounded shadow">
-                <img
-                  src="/main_grp.png"
-                  alt="Main Group"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-              </div>
-            </div>
-
-            {/* Right */}
-            <div className="flex flex-col gap-4 w-1/4">
-              <div className="relative w-full aspect-[16/9] overflow-hidden rounded shadow">
-                <img
-                  src="/stairs.png"
-                  alt="Stairs"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-              </div>
-
-              <div className="relative w-full aspect-[16/9] overflow-hidden rounded shadow">
-                <img
-                  src="/pcb.png"
-                  alt="PCB"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
+          <ScrollAnimatedImages
+            left={[
+              { src: "/shoes.png", alt: "Shoes" },
+              { src: "/car.png", alt: "Car" },
+            ]}
+            center={{ src: "/main_grp.png", alt: "Main Group" }}
+            right={[
+              { src: "/stairs.png", alt: "Stairs" },
+              { src: "/pcb.png", alt: "PCB" },
+            ]}
+          />
         </div>
       </section>
     </div>

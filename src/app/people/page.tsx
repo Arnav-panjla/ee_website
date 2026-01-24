@@ -22,7 +22,9 @@ const professorTypes = [
 
 export default function People() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [selectedProfessorType, setSelectedProfessorType] = useState<string | null>(null);
+  const [selectedProfessorType, setSelectedProfessorType] = useState<
+    string | null
+  >(null);
   const [searchQuery, setSearchQuery] = useState("");
 
   return (
@@ -105,8 +107,8 @@ export default function People() {
                       selectedCategory === item
                         ? "bg-red-600 text-white"
                         : idx % 2 === 0
-                        ? "bg-red-100 text-red-700 hover:bg-red-300"
-                        : "bg-red-200 text-red-800 hover:bg-red-300"
+                          ? "bg-red-100 text-red-700 hover:bg-red-300"
+                          : "bg-red-200 text-red-800 hover:bg-red-300"
                     }`}
                 >
                   <div className="w-auto h-1"></div>
@@ -147,8 +149,8 @@ export default function People() {
                       selectedProfessorType === item
                         ? "bg-red-600 text-white"
                         : idx % 2 === 0
-                        ? "bg-red-100 text-red-700 hover:bg-red-300"
-                        : "bg-red-200 text-red-800 hover:bg-red-300"
+                          ? "bg-red-100 text-red-700 hover:bg-red-300"
+                          : "bg-red-200 text-red-800 hover:bg-red-300"
                     }`}
                 >
                   <div className="w-auto h-1"></div>
