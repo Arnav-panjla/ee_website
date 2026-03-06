@@ -57,47 +57,44 @@ export default function DualCarousel({
 
   return (
     <div className="flex flex-col lg:flex-row gap-6 w-full">
-      {/* Left: horizontal carousel (text + image together) */}
+      {/* Left: full-image horizontal carousel with foreground text */}
       <div className="lg:flex-[2] w-full">
-        <div className="relative w-full overflow-hidden rounded shadow-lg bg-white aspect-[4/3]">
+        <div className="relative w-full overflow-hidden rounded-xl shadow-2xl bg-white aspect-[4/3]">
           <div
             className="flex h-full transition-transform duration-700 ease-in-out"
             style={{ transform: `translateX(-${leftIndex * 100}%)` }}
           >
             {safeLeft.map((slide, idx) => (
               <div key={idx} className="w-full h-full shrink-0">
-                <div className="h-full w-full grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] bg-[#c8b4a1]/95 text-[#2a1d16] rounded overflow-hidden shadow-inner">
-                  <div className="flex flex-col gap-3 sm:gap-4 p-5 sm:p-6 justify-center">
-                    <div className="flex items-center gap-3">
-                      <div className="h-16 w-16 sm:h-20 sm:w-20 rounded-full bg-white text-center text-[#c01a1a] shadow-md flex flex-col items-center justify-center text-sm font-semibold">
-                        <span>{slide.dateLabel ?? "15"}</span>
-                        <span className="text-sm text-gray-600 font-normal">
-                          {slide.dateSub ?? "Jan, 2024"}
-                        </span>
+                <div className="relative h-full w-full overflow-hidden">
+                  <img
+                    src={slide.src}
+                    alt={slide.alt ?? `Slide ${idx + 1}`}
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/25" />
+
+                  <div className="relative z-10 h-full w-full flex items-end p-5 sm:p-6 md:p-8">
+                    <div className="w-full max-w-2xl rounded-xl bg-black/35 backdrop-blur-sm border border-white/20 p-4 sm:p-5 md:p-6 text-white shadow-lg">
+                      <div className="flex items-start gap-4">
+                        <div className="h-14 w-14 sm:h-16 sm:w-16 rounded-full bg-white text-red-600 shadow-md flex flex-col items-center justify-center text-xs sm:text-sm font-semibold shrink-0">
+                          <span>{slide.dateLabel ?? "15"}</span>
+                          <span className="text-gray-600 font-normal text-[10px] sm:text-xs">
+                            {slide.dateSub ?? "Jan, 2024"}
+                          </span>
+                        </div>
+
+                        <div className="min-w-0">
+                          <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold leading-tight">
+                            {slide.title ?? "Something about Research and Innovation"}
+                          </h3>
+                          <p className="mt-2 text-sm sm:text-base text-white/90 leading-relaxed line-clamp-3 sm:line-clamp-4">
+                            {slide.description ??
+                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
+                          </p>
+                        </div>
                       </div>
-                      <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold leading-snug text-[#2a1d16]">
-                        {slide.title ??
-                          "Something about Research and Innovation"}
-                      </h3>
                     </div>
-                    <p className="text-sm sm:text-base leading-relaxed text-[#2a1d16]/90 line-clamp-4">
-                      {slide.description ??
-                        "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
-                    </p>
-                    {/* <button
-                      type="button"
-                      className="inline-flex w-fit items-center gap-2 text-sm font-semibold text-white bg-[#b43b3b] px-4 py-2 rounded-full shadow hover:bg-[#9d2f2f] transition-colors"
-                    >
-                      {slide.cta ?? "Read More"}
-                      <span>➜</span>
-                    </button> */}
-                  </div>
-                  <div className="relative w-full h-full bg-black/10">
-                    <img
-                      src={slide.src}
-                      alt={slide.alt ?? `Slide ${idx + 1}`}
-                      className="absolute inset-0 w-full h-full object-cover"
-                    />
                   </div>
                 </div>
               </div>
@@ -109,7 +106,7 @@ export default function DualCarousel({
               <button
                 type="button"
                 onClick={prevLeft}
-                className="h-9 w-9 rounded-full bg-black/45 text-white text-lg flex items-center justify-center hover:bg-black/65 transition-colors"
+                className="h-10 w-10 rounded-full bg-black/50 text-white text-lg flex items-center justify-center hover:bg-black/75 transition-colors"
                 aria-label="Previous"
               >
                 ‹
@@ -117,7 +114,7 @@ export default function DualCarousel({
               <button
                 type="button"
                 onClick={nextLeft}
-                className="h-9 w-9 rounded-full bg-black/45 text-white text-lg flex items-center justify-center hover:bg-black/65 transition-colors"
+                className="h-10 w-10 rounded-full bg-black/50 text-white text-lg flex items-center justify-center hover:bg-black/75 transition-colors"
                 aria-label="Next"
               >
                 ›
@@ -127,49 +124,43 @@ export default function DualCarousel({
         </div>
       </div>
 
-      {/* Right: vertical carousel (text-focused, smaller image) */}
+      {/* Right: full-image vertical carousel with foreground text */}
       <div className="lg:flex-[1] w-full">
-        <div className="relative w-full overflow-hidden rounded shadow-lg bg-white aspect-[3/4]">
+        <div className="relative w-full overflow-hidden rounded-xl shadow-2xl bg-white aspect-[3/4]">
           <div
             className="flex flex-col h-full transition-transform duration-700 ease-in-out"
             style={{ transform: `translateY(-${rightIndex * 100}%)` }}
           >
             {safeRight.map((slide, idx) => (
               <div key={idx} className="w-full h-full shrink-0">
-                <div className="h-full w-full p-4 sm:p-5">
-                  <div className="h-full w-full rounded shadow bg-white flex flex-col gap-4 p-4 sm:p-5">
-                    <div className="flex flex-col gap-2">
-                      <h4 className="text-lg sm:text-xl font-bold text-gray-900">
+                <div className="relative h-full w-full overflow-hidden">
+                  <img
+                    src={slide.src}
+                    alt={slide.alt ?? `Slide ${idx + 1}`}
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/45 to-black/20" />
+
+                  <div className="relative z-10 h-full w-full flex items-end p-4 sm:p-5">
+                    <div className="w-full rounded-lg bg-black/40 border border-white/20 backdrop-blur-sm p-4 text-white shadow-lg">
+                      <h4 className="text-lg sm:text-xl font-bold leading-tight">
                         {slide.title ?? "Lab Highlight"}
                       </h4>
-                      <p className="text-sm text-gray-700 leading-relaxed line-clamp-4">
+                      <p className="mt-2 text-sm text-white/90 leading-relaxed line-clamp-4">
                         {slide.description ??
                           "A concise highlight of ongoing research and breakthroughs, focusing on impact and collaboration."}
                       </p>
-                    </div>
-                    <div className="flex items-center gap-3 mt-auto">
-                      <div className="relative h-20 w-24 sm:h-24 sm:w-28 rounded overflow-hidden bg-gray-200">
-                        <img
-                          src={slide.src}
-                          alt={slide.alt ?? `Slide ${idx + 1}`}
-                          className="absolute inset-0 w-full h-full object-cover"
-                        />
-                      </div>
-                      <div className="flex-1 flex flex-col gap-1">
-                        <span className="text-xs uppercase tracking-wide text-gray-500">
-                          {slide.dateLabel ?? "15"}{" "}
-                          {slide.dateSub ?? "Jan, 2024"}
+                      <div className="mt-3 flex items-center justify-between gap-3">
+                        <span className="text-xs uppercase tracking-wide text-white/80">
+                          {slide.dateLabel ?? "15"} {slide.dateSub ?? "Jan, 2024"}
                         </span>
-                        <button
-                          type="button"
-                          className="text-sm font-semibold text-[#b43b3b] hover:text-[#9d2f2f] transition-colors w-fit"
-                        >
+                        <span className="text-sm font-semibold text-red-300">
                           {slide.cta ?? "Read More"}
-                        </button>
-                      </div>
+                        </span>
                     </div>
                   </div>
                 </div>
+              </div>
               </div>
             ))}
           </div>
@@ -179,7 +170,7 @@ export default function DualCarousel({
               <button
                 type="button"
                 onClick={prevRight}
-                className="h-8 w-8 rounded-full bg-black/45 text-white text-base flex items-center justify-center hover:bg-black/65 transition-colors"
+                className="h-9 w-9 rounded-full bg-black/55 text-white text-base flex items-center justify-center hover:bg-black/75 transition-colors"
                 aria-label="Previous"
               >
                 ↑
@@ -187,7 +178,7 @@ export default function DualCarousel({
               <button
                 type="button"
                 onClick={nextRight}
-                className="h-8 w-8 rounded-full bg-black/45 text-white text-base flex items-center justify-center hover:bg-black/65 transition-colors"
+                className="h-9 w-9 rounded-full bg-black/55 text-white text-base flex items-center justify-center hover:bg-black/75 transition-colors"
                 aria-label="Next"
               >
                 ↓

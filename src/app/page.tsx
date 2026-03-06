@@ -7,31 +7,33 @@ export default function Home() {
     <div className="w-full flex flex-col">
       {/* Hero Section with Background Image */}
       <section
-        className="relative w-full min-h-[130vh] flex items-center justify-center px-4 sm:px-8 md:px-12 lg:px-16 py-12 sm:py-16 md:py-20"
+        className="relative w-full min-h-[140vh] flex items-center justify-center px-4 sm:px-8 md:px-12 lg:px-16 py-12 sm:py-16 md:py-20"
         style={{
-          backgroundImage: 'url("/image_iitd.png")',
+          backgroundImage: 'url("/image_iitd1.png")',
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundSize: "contain",
           backgroundColor: "#ffffff",
-        }}
+       }}
       >
         {/* Hero Content */}
         <div className="flex items-center justify-center w-full max-w-9xl">
-          <div className="flex flex-col items-start justify-center z-20 px-4 sm:px-8 md:px-12">
+          <div className="flex items-start gap-8 justify-center z-20 px-4 sm:px-8 md:px-12">
             <h1
-              className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-black leading-tight mb-8 animate-slide-up"
+              className="text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-8xl shadow-lg font-black leading-tight mb-8 animate-slide-up"
               style={{
                 animationDuration: "2s",
                 animationTimingFunction: "ease",
                 animationFillMode: "both",
               }}
             >
-              <span className="block text-yellow-100">MAKING</span>
-              <span className="block text-yellow-100">CONNECTIONS</span>
-              <span className="block text-white">DELIVERING</span>
-              <span className="block text-white">RESULTS</span>
+              <span className="block text-white text-5xl">WELCOME TO</span>
+              <span className="block text-white">DEPARTMENT</span>
+              <span className="block text-white">OF</span>
+              <span className="block text-white">ELECTRICAL</span>
+              <span className="block text-white">ENGINEERING</span>
             </h1>
+            <div className="h-8 w-64 bg-transparent"></div>
           </div>
         </div>
       </section>
@@ -199,7 +201,9 @@ export default function Home() {
           </p>
 
           <div className="w-full h-1"></div> */}
+          <div className="w-full h-1"></div>
         </div>
+
       </section>
 
       {/* Fun Facts / Stats Section - Flexbox Layout */}

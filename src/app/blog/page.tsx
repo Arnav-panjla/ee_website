@@ -1,10 +1,5 @@
 import Link from "next/link";
-
-const blogPosts = [
-  { slug: "first-post", title: "Getting Started with Next.js", excerpt: "Learn the basics of Next.js routing." },
-  { slug: "second-post", title: "Understanding App Router", excerpt: "Deep dive into the Next.js App Router." },
-  { slug: "third-post", title: "Dynamic Routes in Next.js", excerpt: "How to create dynamic routes with params." },
-];
+import { blogPosts } from "@/data/blog";
 
 export default function Blog() {
   return (

@@ -1,27 +1,11 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
+import useScrollReveal from "@/hooks/useScrollReveal";
 
 export default function MtechPage() {
   const containerRef = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    const nodes =
-      containerRef.current?.querySelectorAll<HTMLElement>(".sa-item");
-    if (!nodes) return;
-
-    const obs = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) entry.target.classList.add("in-view");
-        });
-      },
-      { threshold: 0.2 },
-    );
-
-    nodes.forEach((el) => obs.observe(el));
-    return () => obs.disconnect();
-  }, []);
+  useScrollReveal(containerRef);
 
   return (
     <div ref={containerRef} className="w-full pt-20">

@@ -3,12 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-
-type NavItem = {
-  label: string;
-  href?: string;
-  children?: { label: string; href: string }[];
-};
+import { navItems, type NavItem } from "@/data/navigation";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -22,31 +17,6 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const navItems: NavItem[] = [
-    { label: "HOME", href: "/" },
-    { label: "GALLERY", href: "/gallery" },
-    { label: "PEOPLE", href: "/people" },
-    { label: "ENGAGE", href: "/engage" },
-    { label: "CONTACT", href: "/contact" },
-    {
-      label: "ADMISSION",
-      children: [
-        { label: "UG", href: "/ug" },
-        { label: "PG", href: "/pg" },
-      ],
-    },
-    { label: "RESEARCH", href: "/research" },
-    {
-      label: "ACADEMICS",
-      children: [
-        { label: "BTECH", href: "/btech" },
-        { label: "MSR", href: "/msr" },
-        { label: "MTECH", href: "/mtech" },
-        { label: "PHD", href: "/phd" },
-      ],
-    },
-  ];
 
   const isActive = (href?: string) => {
     if (!href) return false;
@@ -164,10 +134,11 @@ export default function Navbar() {
                     className="
                       absolute left-1/2 top-full mt-4 w-[220px]
                       -translate-x-1/2
-                      bg-white
+                      bg-zinc-900/95
                       text-center
-                      border border-white/12
-                      shadow-[0_18px_40px_rgba(0,0,0,0.55)]
+                      border border-white/15
+                      rounded-xl
+                      shadow-2xl
                       backdrop-blur-sm
                       opacity-0 translate-y-2 scale-95
                       pointer-events-none
@@ -178,9 +149,8 @@ export default function Navbar() {
                       group-hover/item:pointer-events-auto
                     "
                   >
-
                     {/* Links */}
-                    <div className="px-2 pb-3 space-y-8">
+                    <div className="px-2 py-2 space-y-2">
                       {item.children?.map((child) => {
                         const childActive = isActive(child.href);
 
@@ -191,23 +161,24 @@ export default function Navbar() {
                             className={`
                               group/link
                               flex items-center justify-center
-                              px-5 py-3.5
+                              px-4 py-3
+                              rounded-lg
                               text-sm font-medium tracking-wide
                               transition-all duration-150
                               ${
                                 childActive
                                   ? `
-                                    bg-red-500/15 text-red-300
+                                    bg-red-500/25 text-red-200
                                     shadow-[inset_0_0_0_1px_rgba(239,68,68,0.4)]
                                   `
                                   : `
-                                    text-white/80
-                                    hover:bg-white/6 hover:text-white
+                                    text-zinc-100
+                                    hover:bg-white/10 hover:text-white
                                   `
                               }
                             `}
                           >
-                            <div className="text-xl font-italic text-black text-center whitespace-nowrap">
+                            <div className="text-lg italic text-center whitespace-nowrap">
                               {child.label}
                             </div>
                           </Link>

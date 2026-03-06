@@ -1,23 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-
-const blogPosts: Record<string, { title: string; content: string; date: string }> = {
-  "first-post": {
-    title: "Getting Started with Next.js",
-    content: "Next.js is a powerful React framework that makes it easy to build full-stack web applications. With features like server-side rendering, static site generation, and API routes, Next.js provides everything you need to create modern web applications.",
-    date: "December 1, 2025",
-  },
-  "second-post": {
-    title: "Understanding App Router",
-    content: "The App Router is a new paradigm in Next.js that uses React Server Components by default. It provides better performance, more intuitive routing, and improved developer experience with features like layouts, loading states, and error handling built-in.",
-    date: "December 5, 2025",
-  },
-  "third-post": {
-    title: "Dynamic Routes in Next.js",
-    content: "Dynamic routes allow you to create pages that can handle variable URL segments. Using the [slug] folder naming convention, you can create pages that adapt to different parameters, making it easy to build blogs, product pages, and more.",
-    date: "December 9, 2025",
-  },
-};
+import { blogPosts, blogPostsBySlug } from "@/data/blog";
 
 export default async function BlogPost({
   params,
@@ -25,7 +8,7 @@ export default async function BlogPost({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const post = blogPosts[slug];
+  const post = blogPostsBySlug[slug];
 
   if (!post) {
     notFound();
@@ -67,7 +50,7 @@ export default async function BlogPost({
 }
 
 export async function generateStaticParams() {
-  return Object.keys(blogPosts).map((slug) => ({
-    slug,
+  return blogPosts.map((post) => ({
+    slug: post.slug,
   }));
 }

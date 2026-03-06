@@ -69,18 +69,20 @@ export default function FacultyGrid({
           <button
             key={f.id}
             onClick={() => setSelected(f)}
-            className="bg-gray-100 p-6 max-w-xs text-center shadow-sm hover:shadow-md transition rounded"
+            className="group bg-gray-100 p-6 max-w-xs text-center rounded-lg shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
             aria-haspopup="dialog"
           >
-            <div className="w-full aspect-[8/9] overflow-hidden mb-4 rounded">
+            <div className="w-full aspect-[8/9] overflow-hidden mb-4 rounded-md shadow-sm group-hover:shadow-lg transition-all duration-300">
               <img
                 src={f.img ?? "/face.png"}
                 alt={f.name}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
-            <h3 className="text-red-600 font-semibold">{f.name}</h3>
-            <p className="text-xs text-gray-600 mt-1 line-clamp-1">
+            <h3 className="text-red-600 font-semibold group-hover:text-red-700 transition-colors duration-300">
+              {f.name}
+            </h3>
+            <p className="text-xs text-gray-600 mt-1 line-clamp-1 group-hover:text-gray-700 transition-colors duration-300">
               {f.category?.join(", ") ?? "Faculty"}
             </p>
           </button>
@@ -98,7 +100,7 @@ export default function FacultyGrid({
             onClick={() => setSelected(null)}
           />
 
-          <div className="relative bg-white w-[80vw] max-w-4xl h-[60vh] rounded shadow-lg overflow-hidden flex gap-12">
+          <div className="relative bg-white w-[80vw] max-w-4xl h-[60vh] rounded shadow-2xl overflow-hidden flex gap-12 border border-gray-200">
             {/* Left: image */}
             <div className="w-1/2 bg-gray-100 hidden md:block">
               <img

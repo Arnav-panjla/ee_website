@@ -1,5 +1,6 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
+import useScrollReveal from "@/hooks/useScrollReveal";
 
 type Img = { src: string; alt?: string };
 
@@ -13,23 +14,7 @@ export default function ScrollAnimatedImages({
   right?: Img[];
 }) {
   const containerRef = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    const els = containerRef.current?.querySelectorAll<HTMLElement>(".sa-item");
-    if (!els) return;
-
-    const obs = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) entry.target.classList.add("in-view");
-        });
-      },
-      { threshold: 0.2 },
-    );
-
-    els.forEach((el) => obs.observe(el));
-    return () => obs.disconnect();
-  }, []);
+  useScrollReveal(containerRef);
 
   return (
     <div ref={containerRef} className="flex gap-4 w-full mx-auto px-6">
