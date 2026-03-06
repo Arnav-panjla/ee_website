@@ -64,19 +64,19 @@ export default function FacultyGrid({
         </p>
       )}
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 max-w-4xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
         {filtered.map((f) => (
           <button
             key={f.id}
             onClick={() => setSelected(f)}
-            className="group bg-gray-100 p-6 max-w-xs text-center rounded-lg shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+            className="group bg-gray-200 p-6 max-w-xs text-center rounded-lg shadow-black shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
             aria-haspopup="dialog"
           >
-            <div className="w-full aspect-[8/9] overflow-hidden mb-4 rounded-md shadow-sm group-hover:shadow-lg transition-all duration-300">
+            <div className="w-full aspect-[8/9] overflow-hidden mb-4 rounded-md transition-shadowduration-300">
               <img
                 src={f.img ?? "/face.png"}
                 alt={f.name}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                className="w-full h-full object-cover group-hover:scale-101 transition-transform duration-500"
               />
             </div>
             <h3 className="text-red-600 font-semibold group-hover:text-red-700 transition-colors duration-300">

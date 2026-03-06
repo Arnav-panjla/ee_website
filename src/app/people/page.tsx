@@ -161,7 +161,7 @@ export default function People() {
             </ul>
           </div>
 
-          <div className="flex-1 max-w-4xl">
+          <div className="flex-1 max-w-6xl">
             <div className="w-auto h-16"></div>
             <FacultyGrid
               data={facultyData}
