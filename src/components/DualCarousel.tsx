@@ -56,10 +56,10 @@ export default function DualCarousel({
     setRightIndex((i) => (i - 1 + safeRight.length) % safeRight.length);
 
   return (
-    <div className="flex flex-col lg:flex-row gap-6 w-full">
+    <div className="flex flex-col lg:flex-row gap-2 w-full">
       {/* Left: full-image horizontal carousel with foreground text */}
-      <div className="lg:flex-[2] w-full">
-        <div className="relative w-full overflow-hidden rounded-xl shadow-2xl bg-white aspect-[4/3]">
+      <div className="flex-[3] w-full">
+        <div className="relative w-full overflow-hidden shadow-2xl bg-white aspect-[3/2]">
           <div
             className="flex h-full transition-transform duration-700 ease-in-out"
             style={{ transform: `translateX(-${leftIndex * 100}%)` }}
@@ -74,10 +74,10 @@ export default function DualCarousel({
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/25" />
 
-                  <div className="relative z-10 h-full w-full flex items-end p-5 sm:p-6 md:p-8">
-                    <div className="w-full max-w-2xl rounded-xl bg-black/35 backdrop-blur-sm border border-white/20 p-4 sm:p-5 md:p-6 text-white shadow-lg">
+                  <div className="relative z-10 h-full w-full flex items-end align-middle p-5 sm:p-6 md:p-8">
+                    <div className="w-full bg-black/35 backdrop-blur-sm border border-white/20 p-4 sm:p-5 md:p-6 text-white shadow-lg">
                       <div className="flex items-start gap-4">
-                        <div className="h-14 w-14 sm:h-16 sm:w-16 rounded-full bg-white text-red-600 shadow-md flex flex-col items-center justify-center text-xs sm:text-sm font-semibold shrink-0">
+                        <div className="h-14 w-14 sm:h-16 sm:w-16 bg-white text-red-600 shadow-md flex flex-col items-center justify-center text-xs sm:text-sm font-semibold shrink-0">
                           <span>{slide.dateLabel ?? "15"}</span>
                           <span className="text-gray-600 font-normal text-[10px] sm:text-xs">
                             {slide.dateSub ?? "Jan, 2024"}
@@ -125,8 +125,8 @@ export default function DualCarousel({
       </div>
 
       {/* Right: full-image vertical carousel with foreground text */}
-      <div className="lg:flex-[1] w-full">
-        <div className="relative w-full overflow-hidden rounded-xl shadow-2xl bg-white aspect-[3/4]">
+      <div className="flex-[1] w-full">
+        <div className="relative w-full overflow-hidden shadow-2xl bg-white aspect-[1/2]">
           <div
             className="flex flex-col h-full transition-transform duration-700 ease-in-out"
             style={{ transform: `translateY(-${rightIndex * 100}%)` }}
