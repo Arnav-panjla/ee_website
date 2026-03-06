@@ -128,6 +128,10 @@ export default function MtechPage() {
       <div className=" w-auto h-16 bg-white"></div>
       {/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
 
+        
+
+
+
       <section className="w-full bg-white px-6 py-16 flex justify-center">
         <div className="max-w-6xl mx-auto">
           {/* Title */}
@@ -137,17 +141,19 @@ export default function MtechPage() {
           <div className="w-auto h-8"></div>
 
           {/* Objectives Grid */}
-          <div className="grid grid-cols-1  h-auto md:grid-cols-3 gap-12 mb-12">
+          <div className="grid grid-cols-1 h-auto md:grid-cols-3 gap-6 mb-12">
             {[
               "To develop strong research capabilities through a combination of advanced coursework and a substantial thesis in core and emerging areas of electrical engineering.",
               "To train students in experimental methods, modeling, and analytical techniques relevant to areas such as microelectronics, intelligent systems, signal processing, power, and communications.",
               "To prepare graduates for research-intensive careers in industry, R&D organizations, and academic environments.",
             ].map((text, idx) => (
-              <div
-                key={idx}
-                className="bg-gray-200 shadow-lg rounded-lg px-6 py-6 text-xl text-red-600 leading-relaxed text-center sa-item from-right"
-              >
-                {text}
+              <div className=" flex items-center min-h-56 justify-center bg-gray-200 shadow-black shadow-lg rounded-sm px-6 py-6 leading-relaxed text-center sa-item from-right" key={idx}>
+                <div
+                  key={idx}
+                  className="text-xl text-red-600"
+                >
+                  {text}
+                </div>
               </div>
             ))}
           </div>
@@ -186,6 +192,70 @@ export default function MtechPage() {
       {/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
       <div className=" w-auto h-16 bg-orange-700"></div>
       {/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
+
+      <section className="w-full bg-[#f4f4f4] px-6 py-16 flex justify-center">
+        <div className="max-w-6xl w-full mx-auto">
+          <div className="w-auto h-6"></div>
+
+          <div className="flex flex-col lg:flex-row items-stretch gap-8 lg:gap-12">
+            <div className="flex items-center justify-center lg:justify-start sa-item from-left">
+              <h2 className="text-[56px] sm:text-[66px] lg:text-[74px] leading-[0.95] font-extrabold text-[#b23000] text-center lg:text-left tracking-wide uppercase">
+                WHAT
+                <br />
+                IS IT
+              </h2>
+            </div>
+
+            <div className="hidden lg:block w-[2px] bg-[#b23000]/80" />
+
+            <div className="flex-1 flex flex-col gap-8 sa-item from-right">
+              <p className="text-lg sm:text-xl text-[#b23000] leading-relaxed max-w-4xl">
+                
+                The M.Tech program in Electrical Engineering offers advanced training in specialized domains such as systems & control, power systems, communication, and embedded technologies. The curriculum balances strong theoretical foundations with industry-relevant applications and research exposure, enabling students to work on real-world engineering challenges.
+              </p>
+
+              <button
+                type="button"
+                className="w-fit border border-[#b23000] text-[#b23000] px-6 sm:px-8 py-4 uppercase tracking-[0.12em] text-sm sm:text-base hover:bg-[#b23000] hover:text-white transition-colors duration-300"
+              >
+                Programme Structure &amp; Curriculum (EE1) &gt;
+              </button>
+            </div>
+          </div>
+
+          <div className="w-auto h-12"></div>
+
+          <div className="flex bg-[#b23000] min-h-55 px-6 sm:px-10 lg:px-12 py-10 sm:py-12 shadow-black shadow-lg sa-item from-left">
+            <div className="w-full h-full flex flex-col items-center justify-center">
+              <div className=" w-auto h-2"></div>
+              <h3 className="text-5xl sm:text-4xl font-semibold text-white uppercase text-center mt-12 mb-6">
+                How to Get Admission
+              </h3>
+              <div className=" w-auto h-2"></div>
+              <div className="max-w-5xl mx-auto text-white">
+              
+                <ul className="list-disc list-inside space-y-3 text-lg sm:text-2xl leading-relaxed font-semibold">
+                  <li>
+                    Candidates must qualify GATE in a relevant discipline.
+                  </li>
+                  <li>
+                    Selection involves GATE score + interview.
+                  </li>
+                  <li>
+                    IIT Delhi B.Tech. students may apply via Advanced Standing (Dual Degree) route.
+                  </li>
+                </ul>
+              </div>
+              <div className=" w-auto h-1"></div>
+            </div>
+          </div>
+
+          <div className="w-auto h-8"></div>
+        </div>
+      </section>
+
+
+
       <section className="bg-white flex justify-center px-6 py-16">
         <div className="max-w-6xl  mx-auto flex flex-col items-center gap-4 space-y-10">
           <div className="w-auto h-1"></div>

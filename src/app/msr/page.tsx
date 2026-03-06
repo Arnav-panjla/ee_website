@@ -165,7 +165,7 @@ export default function MsrPage() {
         </div>
       </section>
 
-          <div className=" w-auto h-8 bg-white"></div>
+      <div className=" w-auto h-8 bg-white"></div>
 
 
       <section className="w-full bg-white px-6 py-16 flex justify-center">
