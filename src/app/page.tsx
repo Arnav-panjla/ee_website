@@ -14,11 +14,11 @@ export default function Home() {
           backgroundPosition: "center",
           backgroundSize: "contain",
           backgroundColor: "#ffffff",
-       }}
+        }}
       >
         {/* Hero Content */}
         <div className="flex items-center justify-center w-full max-w-9xl">
-          <div className="flex items-start gap-8 justify-center z-20 px-4 sm:px-8 md:px-12">
+          <div className="flex items-start gap-8 lg:gap-22 justify-center z-20 px-4 sm:px-8 md:px-12">
             <div
               className="text-4xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-8xl font-black leading-tight mb-8 animate-slide-up"
               style={{
@@ -27,11 +27,17 @@ export default function Home() {
                 animationFillMode: "both",
               }}
             >
-                <span className="block text-white text-5xl drop-shadow-lg">WELCOME TO</span>
-                <span className="block text-white drop-shadow-lg">DEPARTMENT</span>
-                <span className="block text-white drop-shadow-lg">OF</span>
-                <span className="block text-white drop-shadow-lg">ELECTRICAL</span>
-                <span className="block text-white drop-shadow-lg">ENGINEERING</span>
+              <span className="block text-white text-5xl">WELCOME TO</span>
+              <span className="block text-white drop-shadow-lg">
+                DEPARTMENT
+              </span>
+              <span className="block text-white drop-shadow-lg">OF</span>
+              <span className="block text-white drop-shadow-lg">
+                ELECTRICAL
+              </span>
+              <span className="block text-white drop-shadow-lg">
+                ENGINEERING
+              </span>
             </div>
             <div className="h-8 w-64 bg-transparent"></div>
           </div>
@@ -71,77 +77,57 @@ export default function Home() {
 
           {/* <div className="mt-10 sm:mt-12 md:mt-16 w-full h-10"></div> */}
 
-          <div className="grid w-full gap-4 px-4 mt-32 sm:px-6 justify-center grid-cols-[repeat(auto-fit,minmax(220px,270px))]">
+          <div className="grid w-full gap-4 px-4 mt-32 sm:px-6 justify-center grid-cols-[repeat(auto-fit,minmax(420px,470px))]">
             {[
-              // {
-              //   title: "Video Title",
-              //   desc: "This is a great space to update your audience with a description of your video. Include information like…",
-              //   duration: "02:05",
-              //   thumb: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80",
-              // },
               {
-                title: "Video Title",
-                desc: "This is a great space to update your audience with a description of your video. Include information like…",
-                duration: "03:27",
-                thumb:
-                  "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80",
+                title: "Department Video 1",
+                desc: "Official YouTube update from the Department of Electrical Engineering.",
+                url: "https://youtu.be/de2A0htl6gc",
+                embed: "https://www.youtube.com/embed/de2A0htl6gc",
               },
               {
-                title: "Video Title",
-                desc: "This is a great space to update your audience with a description of your video. Include information like…",
-                duration: "02:05",
-                thumb:
-                  "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80",
+                title: "Department Video 2",
+                desc: "Official YouTube update from the Department of Electrical Engineering.",
+                url: "https://youtu.be/NX9MssTP68E",
+                embed: "https://www.youtube.com/embed/NX9MssTP68E",
               },
               {
-                title: "Video Title",
-                desc: "This is a great space to update your audience with a description of your video. Include information like…",
-                duration: "03:27",
-                thumb:
-                  "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80",
-              },
-              {
-                title: "Video Title",
-                desc: "This is a great space to update your audience with a description of your video. Include information like…",
-                duration: "02:05",
-                thumb:
-                  "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80",
-              },
-              {
-                title: "Video Title",
-                desc: "This is a great space to update your audience with a description of your video. Include information like…",
-                duration: "02:05",
-                thumb:
-                  "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80",
+                title: "Department Video 3",
+                desc: "Official YouTube update from the Department of Electrical Engineering.",
+                url: "https://youtu.be/sg7rCumxgIs",
+                embed: "https://www.youtube.com/embed/sg7rCumxgIs",
               },
             ].map((video, idx) => (
               <div
                 key={idx}
                 className="bg-white/10 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
-                <div className="relative w-full h-32 sm:h-36 md:h-40">
-                  <img
-                    src={video.thumb}
-                    alt={video.title}
-                    className="w-full h-full object-cover"
-                    style={{ maxHeight: "160px" }}
+                <div className="relative w-full aspect-video bg-black">
+                  <iframe
+                    src={video.embed}
+                    title={video.title}
+                    className="absolute inset-0 w-full h-full"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
                   />
-                  <span className="absolute top-2 right-2 bg-black/60 text-white text-xs px-2 py-1 rounded">
-                    {video.duration}
-                  </span>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="h-10 w-10 sm:h-12 sm:w-12 rounded-full bg-white/80 flex items-center justify-center text-red-700 font-bold">
-                      ▶
-                    </div>
-                  </div>
                 </div>
                 <div className="p-3 text-left bg-white/5">
                   <h3 className="text-white font-semibold text-sm mb-2">
-                    {video.title}
+                    {/* {video.title} */}
                   </h3>
                   <p className="text-gray-100 text-xs leading-snug">
-                    {video.desc}
+                    {/* {video.desc} */}
                   </p>
+                  <a
+                    href={video.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block mt-3 rounded-md overflow-hidden border border-white/20 hover:border-white/40 transition-colors"
+                    aria-label={`Open ${video.title} on YouTube`}
+                  >
+                  </a>
                 </div>
               </div>
             ))}
@@ -203,7 +189,6 @@ export default function Home() {
           <div className="w-full h-1"></div> */}
           <div className="w-full h-1"></div>
         </div>
-
       </section>
 
       {/* Fun Facts / Stats Section - Flexbox Layout */}
