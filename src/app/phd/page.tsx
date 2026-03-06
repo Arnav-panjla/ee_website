@@ -105,6 +105,69 @@ export default function PhdPage() {
       </section>
       <div className=" w-auto h-16 bg-white"></div>
 
+      <section className="w-full bg-[#f4f4f4] px-6 py-16 flex justify-center">
+        <div className="max-w-6xl w-full mx-auto">
+          <div className="w-auto h-6"></div>
+
+          <div className="flex flex-col lg:flex-row items-stretch gap-8 lg:gap-12">
+            <div className="flex items-center justify-center lg:justify-start sa-item from-left">
+              <h2 className="text-[56px] sm:text-[66px] lg:text-[74px] leading-[0.95] font-extrabold text-[#b23000] text-center lg:text-left tracking-wide uppercase">
+                WHAT
+                <br />
+                IS IT
+              </h2>
+            </div>
+
+            <div className="hidden lg:block w-[2px] bg-[#b23000]/80" />
+
+            <div className="flex-1 flex flex-col gap-8 sa-item from-right">
+              <p className="text-lg sm:text-xl text-[#b23000] leading-relaxed max-w-4xl">
+                The PhD program in Electrical Engineering offers advanced research training for students aspiring to become academic leaders, scientists, and innovators. Scholars conduct original research in emerging areas such as renewable energy, smart grids, robotics, AI, power electronics, and communication systems under expert faculty supervision. The program promotes deep technical expertise and high-impact research contributions. 
+              </p>
+
+              <button
+                type="button"
+                className="w-fit border border-[#b23000] text-[#b23000] px-6 sm:px-8 py-4 uppercase tracking-[0.12em] text-sm sm:text-base hover:bg-[#b23000] hover:text-white transition-colors duration-300"
+              >
+                Programme Structure &amp; Curriculum (EE1) &gt;
+              </button>
+            </div>
+          </div>
+
+          <div className="w-auto h-12"></div>
+
+          <div className="flex bg-[#b23000] min-h-64 px-6 sm:px-10 lg:px-12 py-10 sm:py-12 shadow-black shadow-lg sa-item from-left">
+            <div className="w-full h-full flex flex-col items-center justify-center">
+              <div className=" w-auto h-2"></div>
+              <h3 className="text-5xl sm:text-4xl font-semibold text-white uppercase text-center mt-12 mb-6">
+                How to Get Admission
+              </h3>
+              <div className=" w-auto h-2"></div>
+              <div className="max-w-5xl mx-auto text-white">
+                
+
+                <ul className="list-disc list-inside space-y-3 text-lg sm:text-2xl leading-relaxed font-semibold">
+                  <li>Applicants require a strong academic background and research aptitude.</li>
+                  <li>
+                    Admission is through interviews and academic screening.
+                  </li>
+                  <li>
+                    Direct PhD after B.Tech. option is available for students with CGPA ≥ 8.0 (GATE waived).
+                  </li>
+                  <li>
+                    Enhanced fellowships (PMRF, etc.) may be available.
+                  </li>
+                </ul>
+              </div>
+              <div className=" w-auto h-1"></div>
+            </div>
+          </div>
+
+          <div className="w-auto h-8"></div>
+        </div>
+      </section>
+
+
       <section className="w-full bg-white px-6 py-16 flex justify-center">
         <div className="max-w-6xl mx-auto">
           {/* Title */}
@@ -120,11 +183,13 @@ export default function PhdPage() {
               "To advance knowledge through rigorous theoretical, computational, and experimental research using state-of-the-art laboratories and facilities.",
               "To develop independent researchers capable of contributing to academia, national laboratories, and industrial R&D at a global level.",
             ].map((text, idx) => (
-              <div
-                key={idx}
-                className="bg-gray-200 shadow-lg rounded-lg px-6 py-6 text-xl text-red-600 leading-relaxed text-center sa-item from-right"
-              >
-                {text}
+              <div className=" flex items-center min-h-56 justify-center bg-gray-200 shadow-black shadow-lg rounded-sm px-6 py-6 leading-relaxed text-center sa-item from-right" key={idx}>
+                <div
+                  key={idx}
+                  className="text-xl text-red-600"
+                >
+                  {text}
+                </div>
               </div>
             ))}
           </div>
@@ -133,7 +198,7 @@ export default function PhdPage() {
 
           <div className="w-auto h-16"></div>
 
-          <div className="flex flex-col items-center bg-gray-200 px-10 py-10 rounded-lg shadow-lg">
+          <div className="flex flex-col shadow-black shadow-lg items-center bg-gray-200 px-10 py-10 rounded-lg">
             <div className="w-auto h-16"></div>
 
             <h3 className="text-center text-3xl font-semibold text-red-600 mb-6">
