@@ -41,14 +41,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between gap-4">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-4">
-            <div className="w-16 h-16 rounded-full overflow-hidden flex items-center justify-center">
+            <div className="w-16 h-16 rounded-fullover flow-hidden flex items-center justify-center">
               <img
                 src="/image.png"
                 alt="IIT Logo"
                 className="w-full h-full object-cover"
               />
             </div>
-            <span className="text-white font-semibold text-2xl tracking-wider">
+            <span className="text-white font-semibold text-2xl tracking-wider hidden md:block">
               IIT DELHI
             </span>
           </Link>
