@@ -71,7 +71,7 @@
     "clusters": "Robotics – Robotic Vehicles, Intelligence and Learning in Control, Mathematical Control, Smart AC/DC grid, Microgrids, DER planning",
     "website": "",
     "category": ["Control and Automation"],
-    "img": "/face.png"
+    "img": "/ee_site/subashish_datta.png"
   },
   {
     "id": 8,
@@ -81,7 +81,7 @@
     "clusters": "Energy, E-mobility, Power Systems, Grid stability, Energy market and policy, Smart AC/DC grid, Microgrids, DER planning, Charging infrastructure, Distribution Systems Optimization",
     "website": "",
     "category": ["Power Engineering"],
-    "img": "/face.png"
+    "img": "/ee_site/abhijit_abhyankar.jpg"
   },
   {
     "id": 9,
@@ -101,7 +101,7 @@
     "clusters": "Quantum Technology, Fiber-optics & integrated photonics",
     "website": "",
     "category": ["Communications"],
-    "img": "/face.png"
+    "img": "/ee_site/vivek.png"
   },
   {
     "id": 11,
@@ -121,7 +121,7 @@
     "clusters": "Multimedia – Signal and Image Processing, Neuro-AI, Neural signal processing",
     "website": "",
     "category": ["Computer Technology"],
-    "img": "/face.png"
+    "img": "/ee_site/lalan_kumar.png"
   },
   {
     "id": 13,
@@ -131,7 +131,7 @@
     "clusters": "Energy, E-mobility, Power Electronics, Grid stability, Smart AC/DC grid, Inverter based resources, Power quality, Solar/wind planning, Battery storage, HVDC, Charging infrastructure, WBG devices",
     "website": "",
     "category": ["Power Engineering"],
-    "img": "/face.png"
+    "img": "/ee_site/anadarup_das.png"
   },
   {
     "id": 14,
@@ -161,7 +161,7 @@
     "clusters": "Cyber-Physical Systems, Intelligence and Learning in Control, Mathematical Control, Biology as Circuits & Systems",
     "website": "",
     "category": ["Control and Automation"],
-    "img": "/face.png"
+    "img": "/ee_site/shaunak_sen.jpg"
   },
   {
     "id": 17,
@@ -185,7 +185,7 @@
       "Computer Technology",
       "Control and Automation"
     ],
-    "img": "/face.png"
+    "img": "/ee_site/arpan_chattopadhyay.png"
   },
   {
     "id": 19,
@@ -195,7 +195,7 @@
     "clusters": "Cyber-Physical Systems, Power Systems, Intelligence and Learning in Control, Mathematical Control",
     "website": "",
     "category": ["Control and Automation", "Power Engineering"],
-    "img": "/face.png"
+    "img": "/ee_site/priyank_srivastava.png"
   },
   {
     "id": 20,
@@ -205,7 +205,7 @@
     "clusters": "Cyber-Physical Systems, Robotics – Robotic Vehicles, Intelligence and Learning in Control, Robustness, Reliability and Optimality, Mathematical Control",
     "website": "",
     "category": ["Control and Automation"],
-    "img": "/ee_site/janardhanan.jpg"
+    "img": "/ee_site/janardhanan.png"
   },
   {
     "id": 21,
@@ -245,7 +245,7 @@
     "clusters": "CMOS analog/RF/mm-wave integrated circuits & systems, CMOS cryogenic integrated circuits for quantum computers",
     "website": "",
     "category": ["Integrated Electronics and Circuits"],
-    "img": "/face.png"
+    "img": "/ee_site/mustafijur_rahman.png"
   },
   {
     "id": 25,
@@ -375,7 +375,7 @@
     "clusters": "Next Gen Communication Networks (5G, 6G and beyond), Energy, Power Systems, Cyber-Physical Systems, AI/ML, E-mobility",
     "website": "",
     "category": ["Communications", "Power Engineering"],
-    "img": "/ee_site/ranjan_bose.jpg"
+    "img": "/ee_site/ranjan_bose.jpeg"
   },
   {
     "id": 38,
@@ -405,7 +405,7 @@
     "clusters": "Power Systems, Power Electronics, AI/ML, Cyber-Physical Systems, Smart AC/DC grid, Microgrids, Grid stability, Grid protection, Battery storage, Solar/wind planning",
     "website": "",
     "category": ["Power Engineering"],
-    "img": "/face.png"
+    "img": "/ee_site/sukumar_mishra.png"
   },
   {
     "id": 41,
@@ -415,7 +415,7 @@
     "clusters": "Power Systems, Power Electronics, AI/ML, Cyber-Physical Systems, Energy, Grid Stability, Smart AC/DC grid, Microgrids, Battery storage, Charging infrastructure",
     "website": "",
     "category": ["Power Engineering"],
-    "img": "/ee_site/panigrahi.jpg"
+    "img": "/ee_site/panigrahi.jpeg"
   },
   {
     "id": 42,
@@ -475,7 +475,7 @@
     "clusters": "Hardware for Quantum Computing, VLSI Systems Design, Analog and RF CMOS IC, Robustness, Reliability and Optimality",
     "website": "",
     "category": ["Integrated Electronics and Circuits"],
-    "img": "/ee_site/adixit.jpg"
+    "img": "/ee_site/adixit.png"
   },
   {
     "id": 48,
@@ -485,7 +485,7 @@
     "clusters": "Power Electronics, Power Systems, Energy, Machine Design and Control for Energy Generation",
     "website": "",
     "category": ["Power Engineering"],
-    "img": "/ee_site/amit_kumar_jain.jpg"
+    "img": "/ee_site/amit_kumar_jain.png"
   },
   {
     "id": 49,
@@ -515,7 +515,7 @@
     "clusters": "Intelligence and Learning in Control, Mathematical Control, Robustness, Reliability and Optimality, Cyber-Physical Systems, Power Systems, Power Electronics",
     "website": "",
     "category": ["Control and Automation", "Power Engineering"],
-    "img": "/face.png"
+    "img": "/ee_site/deepak.png"
   },
   {
     "id": 52,
@@ -545,7 +545,7 @@
     "clusters": "VLSI Systems Design, Analog and RF CMOS IC, VLSI Systems, Robustness, Reliability and Optimality",
     "website": "",
     "category": ["Integrated Electronics and Circuits"],
-    "img": "/face.png"
+    "img": "/ee_site/rakesh_k_palani.png"
   },
   {
     "id": 55,
@@ -555,7 +555,7 @@
     "clusters": "AI/ML, Multimedia – Signal and Image Processing, Robustness, Reliability and Optimality, Healthcare, Mathematical Control, Cyber-Physical Systems",
     "website": "",
     "category": ["Computer Technology"],
-    "img": "/ee_site/sandeep_kumar.jpg"
+    "img": "/ee_site/sandeep_kumar.png"
   },
   {
     "id": 56,
