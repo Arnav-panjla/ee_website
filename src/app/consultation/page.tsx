@@ -1,41 +1,6 @@
-'use client';
-
-import { useState } from 'react';
-
-export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: '',
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      subject: '',
-      message: '',
-    });
-    alert('Thank you for your message. We will get back to you soon!');
-  };
-
+export default function Consultation() {
   return (
     <div className="w-full pt-20">
-      {/* Hero Banner */}
       <section
         className="relative w-full min-h-[50vh] flex items-center justify-center text-center"
         style={{
@@ -48,17 +13,40 @@ export default function Contact() {
       >
         <div className="absolute inset-0 bg-black/45" />
         <div className="relative z-10 space-y-3 px-4 max-w-3xl">
-          {/* <p className="text-sm font-semibold text-white tracking-[0.28em]">ACADEMICS</p> */}
-          <h1 className="text-7xl font-extrabold text-white">Contact us</h1>
+          <h1 className="text-7xl font-extrabold text-white">SEEK CONSULTATION</h1>
         </div>
       </section>
-        {/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
-      <div className=" w-auto h-6 bg-white"></div>
-        {/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
-      <section className="bg-white flex justify-evenly py-20 px-6">
+
+      {/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
+      <div className="w-auto h-6 bg-white"></div>
+      {/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
+
+      <section className="bg-white flex justify-center px-6 py-16">
+        <div className="max-w-5xl  mx-auto flex items-center gap-10 space-y-10">
+            <p className="text-xl text-center text-gray-600 mt-3 text-orange-700 leading-relaxed">
+
+            The Department of Electrical Engineering, IIT Delhi offers expert consultation in a wide range of areas within electrical engineering and related interdisciplinary fields. Faculty members provide professional consultancy to industry, government agencies, startups, and research organizations, leveraging strong academic foundations and extensive research experience.​
+            <br />
+            <br />
+            Consultation services may include technical evaluation, system design and analysis, feasibility studies, testing and validation, and advisory support for research and development projects.​
+            <br />
+            <br />
+            Requests for consultation may be initiated by contacting the department office or relevant faculty members, in accordance with IIT Delhi’s consultancy guidelines.  
+                        
+            </p>
+          </div>
+      </section>
+
+      {/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
+      <div className="w-auto h-6 bg-white"></div>
+      {/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
+     
+        <section className="bg-gray-100 flex justify-evenly py-20 px-6">
+        
         <div className="max-w-7xl mx-auto">
           
           {/* Header */}
+          <div className="w-auto h-6 bg-gray-100"></div>
           <h1 className="text-5xl font-bold text-orange-700 mb-4">
             Contact Us
           </h1>
@@ -133,9 +121,7 @@ export default function Contact() {
           </form>
         </div>
       </section>
-{/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
-      <div className=" w-auto h-6 bg-white"></div>
-{/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
+
     </div>
   );
 }

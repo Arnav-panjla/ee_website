@@ -125,6 +125,11 @@ export default function FacultyGrid({
               <div className="flex flex-col justify-center gap-6 h-full">
                 {/* Header Section */}
                 <div className="flex flex-col gap-2">
+                  {selected.id === 22 && (
+                    <p className="text-sm font-bold uppercase tracking-wide text-purple-700">
+                      Head of Department, Electrical Engineering
+                    </p>
+                  )}
                   <h2 className="text-5xl font-extrabold text-red-600">
                     {selected.name}
                   </h2>

@@ -1,41 +1,6 @@
-'use client';
-
-import { useState } from 'react';
-
-export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: '',
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      subject: '',
-      message: '',
-    });
-    alert('Thank you for your message. We will get back to you soon!');
-  };
-
+export default function Training() {
   return (
     <div className="w-full pt-20">
-      {/* Hero Banner */}
       <section
         className="relative w-full min-h-[50vh] flex items-center justify-center text-center"
         style={{
@@ -49,16 +14,45 @@ export default function Contact() {
         <div className="absolute inset-0 bg-black/45" />
         <div className="relative z-10 space-y-3 px-4 max-w-3xl">
           {/* <p className="text-sm font-semibold text-white tracking-[0.28em]">ACADEMICS</p> */}
-          <h1 className="text-7xl font-extrabold text-white">Contact us</h1>
+          <h1 className="text-7xl font-extrabold text-white">SEEK TRAINING</h1>
         </div>
       </section>
-        {/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
-      <div className=" w-auto h-6 bg-white"></div>
-        {/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
-      <section className="bg-white flex justify-evenly py-20 px-6">
+
+      {/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
+      <div className="w-auto h-6 bg-white"></div>
+      {/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
+
+      <section className="bg-white flex justify-center px-6 py-16">
+        <div className="max-w-5xl  mx-auto flex items-center gap-10 space-y-10">
+            <p className="text-xl text-center text-gray-600 mt-3 text-orange-700 leading-relaxed">
+           
+
+              The Department of Electrical Engineering, IIT Delhi offers training programs for students, professionals, and industry personnel in core and emerging areas of electrical engineering. These programs are designed to bridge theory and practice through lectures, laboratory sessions, and hands-on project work.
+
+              ​<br />
+              <br />
+
+              Training opportunities may include short-term courses, workshops, faculty development programs, and customized industry-oriented training, conducted in accordance with IIT Delhi guidelines.
+
+              <br />​
+              <br />
+
+              Interested participants and organizations may contact the department office for details on upcoming programs or to propose customized training initiatives.
+
+            </p>
+          </div>
+      </section>
+
+      {/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
+      <div className="w-auto h-6 bg-white"></div>
+      {/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
+     
+        <section className="bg-gray-100 flex justify-evenly py-20 px-6">
+        
         <div className="max-w-7xl mx-auto">
           
           {/* Header */}
+          <div className="w-auto h-6 bg-gray-100"></div>
           <h1 className="text-5xl font-bold text-orange-700 mb-4">
             Contact Us
           </h1>
@@ -133,9 +127,7 @@ export default function Contact() {
           </form>
         </div>
       </section>
-{/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
-      <div className=" w-auto h-6 bg-white"></div>
-{/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
+
     </div>
   );
 }

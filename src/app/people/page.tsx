@@ -59,7 +59,7 @@ export default function People() {
 
         <div className="w-full flex justify-center mx-auto gap-16">
           {/* Filter Options */}
-          <div className="bg-red-700 shadow-lg border-6 border-red-700 flex flex-col">
+          <div className="bg-red-700 min-w-90 shadow-lg border-6 border-red-700 flex flex-col">
             {/* Search Bar */}
             <div className="bg-red-700 text-white text-2xl font-bold text-center py-4">
               <div className="w-auto h-2"></div>

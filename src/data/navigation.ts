@@ -8,7 +8,17 @@ export const navItems: NavItem[] = [
   { label: "HOME", href: "/" },
   { label: "GALLERY", href: "/gallery" },
   { label: "PEOPLE", href: "/people" },
-  { label: "ENGAGE", href: "/engage" },
+  {
+    label: "ENGAGE",
+    children: [
+      { label: "Make a contribution", href: "/contribution" },
+      { label: "Seek collaboration", href: "/collaboration" },
+      { label: "Seek consultation", href: "/consultation" },
+      { label: "Seek Training", href: "/training" },
+      { label: "Famous Enterpeneurs", href: "/entrepreneurs" },
+      { label: "Distinguished Alumni @EE", href: "/alumni" },
+    ],
+  },
   { label: "CONTACT", href: "/contact" },
   {
     label: "ADMISSION",
