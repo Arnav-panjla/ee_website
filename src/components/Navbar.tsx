@@ -33,15 +33,15 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-[#222]/85 backdrop-blur-md shadow-lg"
-          : "bg-[#1f1f1f]/75 backdrop-blur-sm border-b border-white/10"
+          ? "bg-[#2a0906]/95 shadow-md"
+          : "bg-[#2a0906]/90 border-b border-white/10"
       }`}
     >
       <div className="w-full flex justify-center mx-auto px-6 py-4 md:py-5">
         <div className="flex items-center justify-between gap-4">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-4">
-            <div className="w-16 h-16 rounded-fullover flow-hidden flex items-center justify-center">
+            <div className="w-16 h-16 rounded-full overflow-hidden flex items-center justify-center">
               <img
                 src="/image.png"
                 alt="IIT Logo"
@@ -59,21 +59,23 @@ export default function Navbar() {
               const hasChildren = item.children && item.children.length > 0;
               const active = isItemActive(item);
 
-              if (!hasChildren && item.href) {
+              if (!hasChildren) {
+                if (!item.href) return null;
+
                 return (
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`group relative text-white text-sm lg:text-base font-semibold tracking-[0.18em] pb-1 transition-colors duration-200 ${
-                      active ? "text-red-500" : "hover:text-violet-400"
+                    className={`group relative text-white text-sm lg:text-base font-semibold tracking-[0.18em] pb-3 transition-colors duration-200 ${
+                      active ? "text-[#d44a31]" : "hover:text-white"
                     }`}
                   >
                     {item.label}
                     <span
-                      className={`absolute left-0 -bottom-1 h-0.5 bg-violet-500 transition-all duration-300 ${
+                      className={`absolute left-0 -bottom-[3px] h-[2px] bg-[#6f8cff] transition-all duration-300 ${
                         active
                           ? "w-full opacity-100"
-                          : "w-0 opacity-0 group-hover:w-full"
+                          : "w-0 opacity-100 group-hover:w-full"
                       }`}
                     />
                   </Link>
@@ -85,46 +87,32 @@ export default function Navbar() {
                   {item.href ? (
                     <Link
                       href={item.href}
-                      className={`group inline-flex items-center gap-2 text-white text-sm lg:text-base font-semibold tracking-[0.18em] pb-1 transition-colors duration-200 ${
-                        active ? "text-red-500" : "group-hover:text-violet-400"
+                      className={`relative inline-flex items-center text-white text-sm lg:text-base font-semibold tracking-[0.18em] pb-3 transition-colors duration-200 ${
+                        active ? "text-[#d44a31]" : "group-hover:text-white"
                       }`}
                     >
                       {item.label}
                       <span
-                        className={`text-xs transition-transform duration-200 ${
-                          active
-                            ? "text-red-400 rotate-180"
-                            : "text-white/70 group-hover:text-violet-300"
-                        }`}
-                      >
-                        ▾
-                      </span>
-                      <span
-                        className={`absolute left-0 -bottom-1 h-0.5 bg-violet-500 transition-all duration-300 ${
+                        className={`absolute left-0 -bottom-[3px] h-[2px] bg-[#6f8cff] transition-all duration-300 ${
                           active
                             ? "w-full opacity-100"
-                            : "w-0 opacity-0 group-hover:w-full"
+                            : "w-0 opacity-100 group-hover/item:w-full"
                         }`}
                       />
                     </Link>
                   ) : (
                     <button
                       type="button"
-                      className={`relative inline-flex items-center gap-2 text-white text-sm lg:text-base font-semibold tracking-[0.18em] pb-1 transition-colors duration-200 ${
-                        active ? "text-red-500" : "hover:text-violet-400"
+                      className={`relative inline-flex items-center text-white text-sm lg:text-base font-semibold tracking-[0.18em] pb-3 transition-colors duration-200 ${
+                        active ? "text-[#d44a31]" : "group-hover:text-white"
                       }`}
                     >
                       {item.label}
                       <span
-                        className={`text-xs transition-transform duration-200 ${
-                          active ? "text-red-400 rotate-180" : "text-white/70"
-                        }`}
-                      >
-                        {/* ▾ */}
-                      </span>
-                      <span
-                        className={`absolute left-0 -bottom-1 h-0.5 bg-violet-500 transition-all duration-300 ${
-                          active ? "w-full opacity-100" : "w-0 opacity-0"
+                        className={`absolute left-0 -bottom-[3px] h-[2px] bg-[#6f8cff] transition-all duration-300 ${
+                          active
+                            ? "w-full opacity-100"
+                            : "w-0 opacity-100 group-hover/item:w-full"
                         }`}
                       />
                     </button>
@@ -132,25 +120,20 @@ export default function Navbar() {
 
                   <div
                     className="
-                      absolute left-1/2 top-full mt-4 w-[220px]
+                      absolute left-1/2 top-full mt-0 w-[min(100vw-3rem,300px)]
                       -translate-x-1/2
-                      bg-zinc-900/95
-                      text-center
-                      border border-white/15
-                      rounded-xl
-                      shadow-2xl
-                      backdrop-blur-sm
-                      opacity-0 translate-y-2 scale-95
+                      bg-[#ececec]
+                      border-b border-[#d44a31]
+                      px-6 py-5
+                      opacity-0 translate-y-1
                       pointer-events-none
-                      transition-all duration-200 ease-out
+                      transition-all duration-150 ease-out
                       group-hover/item:opacity-100
                       group-hover/item:translate-y-0
-                      group-hover/item:scale-100
                       group-hover/item:pointer-events-auto
                     "
                   >
-                    {/* Links */}
-                    <div className="px-2 py-2 space-y-2">
+                    <div className="grid grid-cols-1 gap-y-4">
                       {item.children?.map((child) => {
                         const childActive = isActive(child.href);
 
@@ -158,29 +141,13 @@ export default function Navbar() {
                           <Link
                             key={child.href}
                             href={child.href}
-                            className={`
-                              group/link
-                              flex items-center justify-center
-                              px-4 py-3
-                              rounded-lg
-                              text-sm font-medium tracking-wide
-                              transition-all duration-150
-                              ${
-                                childActive
-                                  ? `
-                                    bg-red-500/25 text-red-200
-                                    shadow-[inset_0_0_0_1px_rgba(239,68,68,0.4)]
-                                  `
-                                  : `
-                                    text-zinc-100
-                                    hover:bg-white/10 hover:text-white
-                                  `
-                              }
-                            `}
+                            className={`text-base lg:text-xl leading-tight text-[#2f2f2f] underline-offset-4 transition-colors duration-150 ${
+                              childActive
+                                ? "text-[#1d1d1d] underline"
+                                : "hover:text-[#1d1d1d] hover:underline"
+                            }`}
                           >
-                            <div className="text-lg italic text-center whitespace-nowrap">
-                              {child.label}
-                            </div>
+                            {child.label}
                           </Link>
                         );
                       })}
